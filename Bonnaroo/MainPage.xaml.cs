@@ -74,12 +74,14 @@ namespace Bonnaroo
 
         private void Lineup_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(Lineup));
         }
 
         private void Gallery_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(gallery));
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
@@ -99,7 +101,8 @@ namespace Bonnaroo
 
         private void activity_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(activity));
         }
 
         private void involved_Click(object sender, RoutedEventArgs e)

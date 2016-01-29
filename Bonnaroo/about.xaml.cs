@@ -55,47 +55,55 @@ namespace Bonnaroo
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(MainPage));
         }
 
         private void Lineup_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(Lineup));
         }
 
         private void Gallery_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(gallery));
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(info));
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-
+           
         }
 
         private void tickets_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(tickets));
         }
 
         private void activity_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(activity));
         }
 
         private void involved_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(involved));
         }
 
         private void news_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(news));
         }
 
         public class HTMLData

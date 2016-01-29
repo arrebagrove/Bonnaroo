@@ -34,10 +34,11 @@ namespace Bonnaroo
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            bool exists = await library.checkIfFileExists("lineupLandingPage");
+            bool exists = await library.checkIfFileExists("activityLandingPage");
             if (!exists)
             {
-                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
+                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/activities");
+                request.Headers.
                 WebResponse response = await request.GetResponseAsync();
                 Stream data = response.GetResponseStream();
                 string html = String.Empty;
@@ -45,9 +46,9 @@ namespace Bonnaroo
                 {
                     html = sr.ReadToEnd();
                 }
-                await library.writeFile("lineupLandingPage", html);
+                await library.writeFile("activityLandingPage", html);
             }
-            string res = await library.readFile("lineupLandingPage");
+            string res = await library.readFile("activityLandingPage");
             HTMLStrings.Add(new HTMLData(res));
             HtmlSource.Source = HTMLStrings;
 

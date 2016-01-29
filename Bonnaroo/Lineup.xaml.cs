@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -37,15 +38,22 @@ namespace Bonnaroo
             bool exists = await library.checkIfFileExists("lineupLandingPage");
             if (!exists)
             {
-                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
-                WebResponse response = await request.GetResponseAsync();
-                Stream data = response.GetResponseStream();
-                string html = String.Empty;
-                using (StreamReader sr = new StreamReader(data))
+                try
                 {
-                    html = sr.ReadToEnd();
+                    WebRequest request = WebRequest.Create("http://lineup.bonnaroo.com/");
+                    WebResponse response = await request.GetResponseAsync();
+                    Stream data = response.GetResponseStream();
+                    string html = String.Empty;
+                    using (StreamReader sr = new StreamReader(data))
+                    {
+                        html = sr.ReadToEnd();
+                    }
+                    await library.writeFile("lineupLandingPage", html);
                 }
-                await library.writeFile("lineupLandingPage", html);
+                catch (Exception ex)
+                {
+                    Debug.WriteLine(ex);
+                }
             }
             string res = await library.readFile("lineupLandingPage");
             HTMLStrings.Add(new HTMLData(res));
@@ -55,47 +63,55 @@ namespace Bonnaroo
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(MainPage));
         }
 
         private void Lineup_Click(object sender, RoutedEventArgs e)
         {
-
+            // do nothing.
         }
 
         private void Gallery_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(gallery));
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(info));
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(about));
         }
 
         private void tickets_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(tickets));
         }
 
         private void activity_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(activity));
         }
 
         private void involved_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(involved));
         }
 
         private void news_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(news));
         }
 
         public class HTMLData
