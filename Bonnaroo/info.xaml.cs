@@ -34,68 +34,74 @@ namespace Bonnaroo
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            bool exists = await library.checkIfFileExists("lineupLandingPage");
+            bool exists = await library.checkIfFileExists("infoLandingPage");
             if (!exists)
             {
-                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
-                WebResponse response = await request.GetResponseAsync();
-                Stream data = response.GetResponseStream();
-                string html = String.Empty;
-                using (StreamReader sr = new StreamReader(data))
-                {
-                    html = sr.ReadToEnd();
-                }
-                await library.writeFile("lineupLandingPage", html);
+                string html = await library.makeWebRequest("http://www.bonnaroo.com/festival-info");
+                await library.writeFile("infoLandingPage", html);
+                HTMLStrings.Add(new HTMLData(html));
+                HtmlSource.Source = HTMLStrings;
             }
-            string res = await library.readFile("lineupLandingPage");
-            HTMLStrings.Add(new HTMLData(res));
-            HtmlSource.Source = HTMLStrings;
-
+            else
+            {
+                string res = await library.readFile("infoLandingPage");
+                HTMLStrings.Add(new HTMLData(res));
+                HtmlSource.Source = HTMLStrings;
+            }
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(MainPage));
         }
 
         private void Lineup_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            //rootFrame.Navigate(typeof(MainPage));
         }
 
         private void Gallery_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(gallery));
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            //rootFrame.Navigate(typeof(MainPage));
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(about));
         }
 
         private void tickets_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(tickets));
         }
 
         private void activity_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(activity));
         }
 
         private void involved_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(involved));
         }
 
         private void news_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(news));
         }
 
         public class HTMLData
@@ -107,6 +113,12 @@ namespace Bonnaroo
             }
 
             public string HTML { get; set; }
+        }
+
+        private async void refresh_Click(object sender, RoutedEventArgs e)
+        {
+            string html = await library.makeWebRequest("http://www.bonnaroo.com/festival-info");
+            await library.writeFile("infoLandingPage", html);
         }
     }
 }
