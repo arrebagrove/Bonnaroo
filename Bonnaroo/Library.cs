@@ -1,7 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Diagnostics;
+using System.IO;
 using System.Linq;
+using System.Net;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
@@ -28,7 +30,18 @@ namespace Bonnaroo
             }
             return true;
         }
-
+        public async Task<string> makeWebRequest(string uri)
+        {
+            WebRequest request = WebRequest.Create(uri);
+            WebResponse response = await request.GetResponseAsync();
+            Stream data = response.GetResponseStream();
+            string html = String.Empty;
+            using (StreamReader sr = new StreamReader(data))
+            {
+                html = sr.ReadToEnd();
+            }
+            return html;
+        }
         public async Task<string> readFile(string filename)
         {
             var applicationData = Windows.Storage.ApplicationData.Current;
