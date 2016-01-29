@@ -11,7 +11,7 @@
         <CommandBar>
             <CommandBar.PrimaryCommands>
                 <AppBarButton Name="Home" Label="Home" Icon="Home" Click="Home_Click"></AppBarButton>
-                <AppBarButton Name="LineupButton" Label="Lineup" Icon="List" Click="Lineup_Click"></AppBarButton>
+                <AppBarButton Name="LineupButton" Visibility="Collapsed" Label="Lineup" Icon="List" Click="Lineup_Click"></AppBarButton>
                 <AppBarButton Name="galleryButton" Label="Gallery" Icon="Camera" Click="Gallery_Click"></AppBarButton>
                 <AppBarButton Name="infoButton" Label="Festival Info" Icon="ContactInfo" Click="Info_Click"></AppBarButton>
             </CommandBar.PrimaryCommands>
