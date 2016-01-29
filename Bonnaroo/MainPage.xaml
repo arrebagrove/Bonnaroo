@@ -1,0 +1,68 @@
+﻿<Page
+    x:Class="Bonnaroo.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bonnaroo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+    <!--<Page.BottomAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                    <ColumnDefinition Width="Auto"></ColumnDefinition>
+                </Grid.ColumnDefinitions>
+                <TextBlock Text="Home" Grid.Column="0" Margin="5,0,5,0" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+                <TextBlock Text="Tickets + Accomodation" Grid.Column="1" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+                <TextBlock Text="Lineup" Grid.Column="2" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+                <TextBlock Text="Activities" Grid.Column="3" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+                <TextBlock Text="Festival Info" Grid.Column="4" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+                <TextBlock Text="Get Involved" Grid.Column="5" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+                <TextBlock Text="News" Grid.Column="6" TextWrapping="WrapWholeWords" FontSize="15"></TextBlock>
+            </Grid>
+        </AppBar>
+    </Page.BottomAppBar> -->
+    <Page.BottomAppBar>
+        <CommandBar>
+            <CommandBar.PrimaryCommands>
+                <AppBarButton Name="Home" Label="Home" Icon="Home" Click="Home_Click"></AppBarButton>
+                <AppBarButton Name="Lineup" Label="Lineup" Icon="List" Click="Lineup_Click"></AppBarButton>
+                <AppBarButton Name="Gallery" Label="Gallery" Icon="Camera" Click="Gallery_Click"></AppBarButton>
+                <AppBarButton Name="Info" Label="Festival Info" Icon="ContactInfo" Click="Info_Click"></AppBarButton>
+            </CommandBar.PrimaryCommands>
+            <CommandBar.SecondaryCommands>
+                <AppBarButton Label="About" Name="about" Click="About_Click"></AppBarButton>
+                <AppBarButton Label="Tickets + Accomodation" Name="tickets" Click="tickets_Click"></AppBarButton>
+                <AppBarButton Label="Activites" Name="activity" Click="activity_Click"></AppBarButton>
+                <AppBarButton Label="Get Involved" Name="involved" Click="involved_Click"></AppBarButton>
+                <AppBarButton Label="News" Name="news" Click="news_Click"></AppBarButton>
+            </CommandBar.SecondaryCommands>
+        </CommandBar>
+    </Page.BottomAppBar>
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        
+        
+      <Grid Grid.Row="1">
+            <Grid Name="contentGrid">
+                <Grid.Resources>
+                    <ResourceDictionary>
+                        <CollectionViewSource x:Name="HtmlSource"/>
+                    </ResourceDictionary>
+                </Grid.Resources>
+                <WebView x:Name="myWebView" local:MyExtensions.HTML="{Binding Source={StaticResource HtmlSource}, Path=HTML}" Grid.Row="1"/>
+            </Grid>
+        </Grid>
+
+    </Grid>
+</Page>
