@@ -24,33 +24,16 @@ namespace Bonnaroo
     /// </summary>
     public sealed partial class about : Page
     {
-        public ObservableCollection<HTMLData> HTMLStrings = new ObservableCollection<HTMLData>();
-        public Library library;
+        
         public about()
         {
             this.InitializeComponent();
             this.NavigationCacheMode = NavigationCacheMode.Required;
-            library = new Library();
+           
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            bool exists = await library.checkIfFileExists("lineupLandingPage");
-            if (!exists)
-            {
-                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
-                WebResponse response = await request.GetResponseAsync();
-                Stream data = response.GetResponseStream();
-                string html = String.Empty;
-                using (StreamReader sr = new StreamReader(data))
-                {
-                    html = sr.ReadToEnd();
-                }
-                await library.writeFile("lineupLandingPage", html);
-            }
-            string res = await library.readFile("lineupLandingPage");
-            HTMLStrings.Add(new HTMLData(res));
-            HtmlSource.Source = HTMLStrings;
-
+            
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -104,17 +87,6 @@ namespace Bonnaroo
         {
             Frame rootFrame = Window.Current.Content as Frame;
             rootFrame.Navigate(typeof(news));
-        }
-
-        public class HTMLData
-        {
-            public HTMLData() { }
-            public HTMLData(string _HTML)
-            {
-                HTML = _HTML;
-            }
-
-            public string HTML { get; set; }
         }
     }
 }
