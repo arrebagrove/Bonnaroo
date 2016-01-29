@@ -118,6 +118,8 @@ namespace Bonnaroo
         {
             string html = await library.makeWebRequest("http://www.bonnaroo.com/media");
             await library.writeFile("galleryLandingPage", html);
+            HTMLStrings.Add(new HTMLData(html));
+            HtmlSource.Source = HTMLStrings;
         }
     }
 }

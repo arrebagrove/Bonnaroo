@@ -121,6 +121,8 @@ namespace Bonnaroo
         {
             string html = await library.makeWebRequest("http://www.bonnaroo.com/activities");
             await library.writeFile("activityLandingPage", html);
+            HTMLStrings.Add(new HTMLData(html));
+            HtmlSource.Source = HTMLStrings;
         }
     }
 }
