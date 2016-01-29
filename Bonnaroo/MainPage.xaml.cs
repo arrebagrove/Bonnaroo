@@ -38,14 +38,8 @@ namespace Bonnaroo
             bool exists = await library.checkIfFileExists("webLandingPage");
             if (!exists)
             {
-                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
-                WebResponse response = await request.GetResponseAsync();
-                Stream data = response.GetResponseStream();
-                string html = String.Empty;
-                using (StreamReader sr = new StreamReader(data))
-                {
-                    html = sr.ReadToEnd();
-                }
+                //WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
+                string html = await library.makeWebRequest("http://www.bonnaroo.com/");
                 await library.writeFile("webLandingPage", html);
                 HTMLStrings.Add(new HTMLData(html));
                 HtmlSource.Source = HTMLStrings;
@@ -125,9 +119,12 @@ namespace Bonnaroo
             rootFrame.Navigate(typeof(news));
         }
 
-        private void refreshButton_Click(object sender, RoutedEventArgs e)
+        private async void refreshButton_Click(object sender, RoutedEventArgs e)
         {
-
+            string html = await library.makeWebRequest("http://www.bonnaroo.com/");
+            await library.writeFile("webLandingPage", html);
+            HTMLStrings.Add(new HTMLData(html));
+            HtmlSource.Source = HTMLStrings;
         }
     }
 }
