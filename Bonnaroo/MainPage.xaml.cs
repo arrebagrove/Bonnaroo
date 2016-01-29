@@ -47,10 +47,15 @@ namespace Bonnaroo
                     html = sr.ReadToEnd();
                 }
                 await library.writeFile("webLandingPage", html);
+                HTMLStrings.Add(new HTMLData(html));
+                HtmlSource.Source = HTMLStrings;
             }
-            string res = await library.readFile("webLandingPage");
-            HTMLStrings.Add(new HTMLData(res));
-            HtmlSource.Source = HTMLStrings;
+            else
+            {
+                string res = await library.readFile("webLandingPage");
+                HTMLStrings.Add(new HTMLData(res));
+                HtmlSource.Source = HTMLStrings;
+            }
 
         }
 
@@ -86,17 +91,20 @@ namespace Bonnaroo
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(info));
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(about));
         }
 
         private void tickets_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(tickets));
         }
 
         private void activity_Click(object sender, RoutedEventArgs e)
@@ -107,10 +115,17 @@ namespace Bonnaroo
 
         private void involved_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(involved));
         }
 
         private void news_Click(object sender, RoutedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(news));
+        }
+
+        private void refreshButton_Click(object sender, RoutedEventArgs e)
         {
 
         }
