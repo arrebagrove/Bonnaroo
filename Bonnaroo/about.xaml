@@ -17,7 +17,7 @@
                 <AppBarButton Name="refreshButton" Label="Refresh Page" Icon="Refresh"></AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
-                <AppBarButton Label="About" Name="aboutButton" Click="About_Click"></AppBarButton>
+                <AppBarButton Label="About the App" Name="aboutButton" Click="About_Click"></AppBarButton>
                 <AppBarButton Label="Tickets + Accomodation" Name="ticketsButton" Click="tickets_Click"></AppBarButton>
                 <AppBarButton Label="Activites" Name="activityButton" Click="activity_Click"></AppBarButton>
                 <AppBarButton Label="Get Involved" Name="involvedButton" Click="involved_Click"></AppBarButton>
@@ -47,7 +47,7 @@
                 <ColumnDefinition Width="Auto"></ColumnDefinition>
                 <ColumnDefinition Width="*"></ColumnDefinition>
             </Grid.ColumnDefinitions>
-            <TextBlock Text="This is a Hybrid app. It loads actual webpages but provides app level buttons to support quick navigation."
+            <TextBlock Text="This is a Hybrid app. It loads actual webpages but provides app level buttons to support quick navigation. Once a page is loaded, it is automaticaly saved to work offline."
                            TextWrapping="WrapWholeWords" Grid.Row="0" Grid.ColumnSpan="2" TextAlignment="Justify"></TextBlock>
             <TextBlock Grid.Row="1" Grid.ColumnSpan="2" Text="App Support" Margin="0,20,0,15" Foreground="#236AAC"></TextBlock>
             <TextBlock Text="Email" Grid.Row="2" VerticalAlignment="Center" Grid.Column="0" Margin="0,5,10,5"></TextBlock>

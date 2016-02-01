@@ -17,7 +17,7 @@
                 <AppBarButton Name="refresh" Label="Refresh Page" Icon="Refresh" Click="refresh_Click"></AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
-                <AppBarButton Label="About" Name="aboutButton" Click="About_Click"></AppBarButton>
+                <AppBarButton Label="About the App" Name="aboutButton" Click="About_Click"></AppBarButton>
                 <AppBarButton Label="Tickets + Accomodation" Name="ticketsButton" Click="tickets_Click"></AppBarButton>
                 <AppBarButton Label="Activites" Name="activityButton" Click="activity_Click"></AppBarButton>
                 <AppBarButton Label="Get Involved" Name="involvedButton" Click="involved_Click"></AppBarButton>
