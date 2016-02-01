@@ -8,6 +8,7 @@ using Windows.ApplicationModel.Activation;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.Foundation.Metadata;
+using Windows.UI.Core;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -66,10 +67,7 @@ namespace Bonnaroo
                 {
                     //TODO: Load state from previously suspended application
                 }
-                if(ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
-                {
-                    await Windows.UI.ViewManagement.StatusBar.GetForCurrentView().HideAsync();
-                }
+                
                 // Place the frame in the current Window
                 Window.Current.Content = rootFrame;
             }
@@ -81,10 +79,28 @@ namespace Bonnaroo
                 // parameter
                 rootFrame.Navigate(typeof(MainPage), e.Arguments);
             }
+            if (ApiInformation.IsTypePresent("Windows.UI.ViewManagement.StatusBar"))
+            {
+                await Windows.UI.ViewManagement.StatusBar.GetForCurrentView().HideAsync();
+            }
+            SystemNavigationManager.GetForCurrentView().BackRequested += App_BackRequested;
+
             // Ensure the current window is active
             Window.Current.Activate();
         }
 
+        private void App_BackRequested(object sender, BackRequestedEventArgs e)
+        {
+            Frame rootFrame = Window.Current.Content as Frame;
+            if (rootFrame == null)
+                return;
+
+            if (rootFrame.CanGoBack && e.Handled == false)
+            {
+                e.Handled = true;
+                rootFrame.GoBack();
+            }
+        }
         /// <summary>
         /// Invoked when Navigation to a certain page fails
         /// </summary>

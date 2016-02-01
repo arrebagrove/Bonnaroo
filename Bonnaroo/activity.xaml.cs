@@ -119,10 +119,17 @@ namespace Bonnaroo
 
         private async void refreshButton_Click(object sender, RoutedEventArgs e)
         {
-            string html = await library.makeWebRequest("http://www.bonnaroo.com/activities");
-            await library.writeFile("activityLandingPage", html);
-            HTMLStrings.Add(new HTMLData(html));
-            HtmlSource.Source = HTMLStrings;
+            try
+            {
+                string html = await library.makeWebRequest("http://www.bonnaroo.com/activities");
+                await library.writeFile("activityLandingPage", html);
+                HTMLStrings.Add(new HTMLData(html));
+                HtmlSource.Source = HTMLStrings;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
         }
     }
 }

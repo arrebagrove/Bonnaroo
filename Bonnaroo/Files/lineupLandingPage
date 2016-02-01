@@ -1,0 +1,1749 @@
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML+RDFa 1.1//EN">
+<html lang="en" dir="ltr" version="HTML+RDFa 1.1"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:dc="http://purl.org/dc/terms/"
+  xmlns:foaf="http://xmlns.com/foaf/0.1/"
+  xmlns:og="http://ogp.me/ns#"
+  xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns:sioc="http://rdfs.org/sioc/ns#"
+  xmlns:sioct="http://rdfs.org/sioc/types#"
+  xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+  xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+<head profile="http://www.w3.org/1999/xhtml/vocab"><script type="text/javascript">var NREUMQ=NREUMQ||[];NREUMQ.push(["mark","firstbyte",new Date().getTime()]);</script>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no" />
+
+
+  <title>Bonnaroo</title>
+  <meta name="title" content="Bonnaroo" />
+  <meta name="description" content="See who's playing Bonnaroo 2016, which of your friends are going, and pick your own favorites." />
+  
+  
+  <link rel="image_src" href="http://s3.amazonaws.com/dostuff-production/property_assets/18021/Broo15_DoStuff_75x75.jpg" />
+
+
+  
+
+  
+    
+                  
+      <link href="http://cdn1.dostuffmedia.com/stylesheets/jquery/1.8.16/jquery-ui-1.8.16.custom.css?1409239749" media="screen" rel="stylesheet" type="text/css" />
+      
+            <script src="http://s3.amazonaws.com/dostuff-production/code_asset/4651/javascript_20140129220424.js?1391033064" type="text/javascript"></script>
+<link href="http://s3.amazonaws.com/dostuff-production/code_asset/4650/layout_css_20140221225130.css?1393023090" media="screen" rel="stylesheet" type="text/css" />
+<link href="http://s3.amazonaws.com/dostuff-production/code_asset/9463/compiled/compiled_ca_custom_sass_20160106005420.css?1452041660" media="screen" rel="stylesheet" type="text/css" />
+      <link href="http://s3.amazonaws.com/dostuff-production/code_asset/9464/ca_custom_css_20160119200620.css?1453233980" media="screen" rel="stylesheet" type="text/css" />      <script src="http://s3.amazonaws.com/dostuff-production/code_asset/9465/ca_custom_js_20160122183319.js?1453487599" type="text/javascript"></script>      <script src="http://cdn3.dostuffmedia.com/javascripts/festival/jquery-ui-1.8.9.custom.festival.min.js?1352906122" type="text/javascript"></script>
+      
+            
+<link rel="shortcut icon" href="http://s3.amazonaws.com/dostuff-production/property_assets/28280/favicon.ico" type="image/png" />
+<meta property="og:description" content="80,000 Happy Campers. 700 Acres of Tennessee Nature. 150 Epic Performances. 10+ Stages of Music. Dozens of Comedians. Four of the Best Days Ever.">
+  <meta property="og:image" content="http://www.bonnaroo.com/sites/default/files/content-files/images/broo-fb.jpg?123">
+ 
+
+
+
+  <style type="text/css" media="all">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18203/system.base.css");
+</style>
+<style type="text/css" media="all">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18186/datepicker.1.7.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18187/ckeditor.css");
+</style>
+<style type="text/css" media="all">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18188/ctools.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18189/webform.css");
+</style>
+<style type="text/css" media="all">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18190/alpha-reset.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18191/alpha-mobile.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18192/alpha-alpha.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/18193/formalize.css");
+@import url("http://cdn1.dostuffmedia.com/themes/festival_shell_bonnaroo_2016/assets/global.css");
+</style>
+
+<!--[if (lt IE 9)&(!IEMobile)]>
+<style type="text/css" media="all">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28048/bonnaroo2016-alpha-default.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28050/bonnaroo2016-alpha-default-normal.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28051/alpha-default-normal-24.css");
+</style>
+<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28048/bonnaroo2016-alpha-default.css");
+@import url("http://cdn0.dostuffmedia.com/themes/festival_shell_bonnaroo_2016/assets/bonnaroo2016-alpha-default-narrow.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28055/alpha-default-narrow-24.css");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28048/bonnaroo2016-alpha-default.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28050/bonnaroo2016-alpha-default-normal.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28051/alpha-default-normal-24.css");
+</style>
+<!--<![endif]-->
+
+<!--[if gte IE 9]><!-->
+<style type="text/css" media="all and (min-width: 1220px)">
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28048/bonnaroo2016-alpha-default.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28057/bonnaroo2016-alpha-default-wide.css");
+@import url("http://s3.amazonaws.com/dostuff-production/property_assets/28058/alpha-default-wide-24.css");
+</style>
+<!--<![endif]-->
+
+
+<script type="text/javascript" src="http://code.jquery.com/jquery-1.7.1.min.js"></script>
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+window.jQuery || document.write("<script src='http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js'>\x3C/script>")
+//--><!]]>
+</script>
+
+<script src='http://s3.amazonaws.com/dostuff-production/property_assets/11734/broo.js'></script>
+
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+jQuery.extend(Drupal.settings, {"basePath":"\/","pathPrefix":"","ajaxPageState":{"theme":"roo","theme_token":"m14eS-as_wTa3bN-0FAu16R6LMUa1wk10dmIWhXwPQ8","js":{"0":1,"1":1,"2":1,"sites\/all\/libraries\/modernizr\/modernizr-2.6.2.js":1,"http:\/\/code.jquery.com\/jquery-1.7.1.min.js":1,"3":1,"misc\/jquery.once.js":1,"misc\/drupal.js":1,"sites\/all\/modules\/jquery_update\/replace\/ui\/external\/jquery.cookie.js":1,"sites\/all\/modules\/jquery_update\/replace\/misc\/jquery.form.min.js":1,"misc\/ajax.js":1,"sites\/all\/modules\/views\/js\/base.js":1,"misc\/progress.js":1,"sites\/all\/modules\/views\/js\/ajax_view.js":1,"sites\/all\/modules\/webform\/js\/webform.js":1,"sites\/all\/modules\/google_analytics\/googleanalytics.js":1,"sites\/all\/themes\/roo\/js\/jquery.magnific.min.js":1,"sites\/all\/themes\/roo\/js\/jquery.slicknav.min.js":1,"sites\/all\/themes\/roo\/js\/jquery.bxslider.min.js":1,"sites\/all\/themes\/roo\/js\/jquery.sticky.js":1,"sites\/all\/themes\/roo\/js\/scripts.js":1,"sites\/all\/themes\/omega\/omega\/js\/jquery.formalize.js":1,"sites\/all\/themes\/omega\/omega\/js\/omega-mediaqueries.js":1},"css":{"sites\/all\/modules\/ckeditor\/ckeditor.css":1,"sites\/all\/modules\/ctools\/css\/ctools.css":1,"sites\/all\/modules\/webform\/css\/webform.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-reset.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-mobile.css":1,"sites\/all\/themes\/omega\/alpha\/css\/alpha-alpha.css":1,"sites\/all\/themes\/omega\/omega\/css\/formalize.css":1,"sites\/all\/themes\/roo\/css\/global.css":1,"ie::normal::sites\/all\/themes\/roo\/css\/roo-alpha-default.css":1,"ie::normal::sites\/all\/themes\/roo\/css\/roo-alpha-default-normal.css":1,"ie::normal::sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"narrow::sites\/all\/themes\/roo\/css\/roo-alpha-default.css":1,"narrow::sites\/all\/themes\/roo\/css\/roo-alpha-default-narrow.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/narrow\/alpha-default-narrow-24.css":1,"normal::sites\/all\/themes\/roo\/css\/roo-alpha-default.css":1,"normal::sites\/all\/themes\/roo\/css\/roo-alpha-default-normal.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/normal\/alpha-default-normal-24.css":1,"wide::sites\/all\/themes\/roo\/css\/roo-alpha-default.css":1,"wide::sites\/all\/themes\/roo\/css\/roo-alpha-default-wide.css":1,"sites\/all\/themes\/omega\/alpha\/css\/grid\/alpha_default\/wide\/alpha-default-wide-24.css":1}},"views":{"ajax_path":"\/views\/ajax","ajaxViews":{"views_dom_id:ea3051c245e825f2b08c43985f6c0b99":{"view_name":"front_page_slider","view_display_id":"block","view_args":"","view_path":"node\/38","view_base_path":null,"view_dom_id":"ea3051c245e825f2b08c43985f6c0b99","pager_element":0}}},"googleanalytics":{"trackOutbound":1,"trackMailto":1,"trackDownload":1,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls|xml|z|zip"},"omega":{"layouts":{"primary":"normal","order":["narrow","normal","wide"],"queries":{"narrow":"all and (min-width: 740px) and (min-device-width: 740px), (max-device-width: 800px) and (min-width: 740px) and (orientation:landscape)","normal":"all and (min-width: 980px) and (min-device-width: 980px), all and (max-device-width: 1024px) and (min-width: 1024px) and (orientation:landscape)","wide":"all and (min-width: 1220px)"}}}});
+//--><!]]>
+</script>
+
+  <!--[if lt IE 9]><script src="http://s3.amazonaws.com/dostuff-production/property_assets/18202/html5.js"></script><![endif]-->
+<script type="text/javascript">
+<!--//--><![CDATA[//><!--
+
+  function adjustToolTipPosition(el, tooltip) {
+  }
+
+//--><!]]>
+</script>
+
+
+            
+    
+<script>
+  jQuery(document).ready(function($){
+    
+  (function(){
+  var timeout;
+  var showFacebookFriends = $('#ds-content').data('ds-hovercards-version') == 'facebook';
+
+$.fn.lineup_bubble = function() {
+  var $this = $(this);
+  // it will be called from playe callback on schedule page as well
+  // so we want to be sure that bubble is not added to ds-event-boxed
+  if ($this.hasClass('band') || $this.hasClass('ds-event-lower')) {
+    var has_bubble = $this.data('lineup-bubble-has-bubble');
+    if (!has_bubble) {
+      $this.append($('<span class="ds-text" />').text($this.text()));
+      $this.data('lineup-bubble-has-bubble', true);
+    }
+  }
+  return $this;
+}
+
+// this function is used for hovercards on festivals
+// referenced from tooltip.js.erb
+var goAwayFacebook = false;
+var add_remove_click = function(event) {
+  var $dsAddRem = $(this);
+  var isBand = event.data.isBand, triggerID;
+    for_facebook_app = $('body').hasClass('ds-facebook-app');
+  
+  if (!event.data.triggerID) {
+    triggerID = $dsAddRem.attr('band_id');
+  } else {
+    triggerID = event.data.triggerID
+  }
+
+  var toggleURL = isBand ? ['/band/', triggerID, '/fans/toggle.js'].join('') : ['/vote/', triggerID, '/toggle.js'].join('');
+  if (for_facebook_app) {
+    var tab_id = $('body').attr("ds-tab-id");
+    toggleURL = "/contest/pagetab/" + tab_id + "/toggle/" + triggerID;
+  }
+
+  if ($dsAddRem.hasClass('ds-disabled')) return false;
+
+  $dsAddRem.addClass('ds-disabled');
+
+  var params = {};
+
+  var showFacebookFriends = $('#ds-content').data('ds-hovercards-version') == 'facebook';
+  if (showFacebookFriends) {
+    params.v6 = 1;
+  } else {
+    params.v3 = 1;
+  }
+  if ( $('body').hasClass('ds-popup-v8') ) {
+    var data = isBand ? (params.v8 = 1) : (params.v8lol = 1);
+  }
+  
+    }
+
+var $metabar_add = $('#ds-metabar .ds-add-remove');
+// metabar add/remove works only with band voting now, hence the isBand: true
+$metabar_add.live('click', {isBand : true}, add_remove_click)
+
+
+$('.ds-lineup > ul > li > a, .ds-schedule .ds-event-box, ul.ds-lineup > li > em  > span > a')
+  .add('.ds-event-lower .ds-event-lower').hover(
+  function() {
+    var $this = $(this),
+        triggerID = this.id,
+        tooltipState = $this.data('ds-tooltip-state'),
+        isBand = $this.hasClass('band');
+        if (!isBand) {
+          isBand = $this.hasClass('band-image');
+        }
+        lower_tooltip = $this.hasClass('band-image') ? ' ds-tooltip-lower' : '';
+        for_facebook_app = $('body').hasClass('ds-facebook-app');
+
+            $this.lineup_bubble();
+
+    if ($this.hasClass('band-image')) {
+      $this.addClass('ds-hover-image');
+    }
+
+    $this
+      .addClass('ds-hover')
+            .parent()
+        .addClass('ds-active');
+
+    // add new tooltip if only there is no tooltip already
+    if (typeof tooltipState === 'undefined') {
+      var $tooltip = $('<span class="ds-tooltip' + lower_tooltip + '">\
+                          <span class="ds-arrow"></span>\
+                          <span class="ds-arrow-bg"></span>\
+                          <span class="ds-content"><span class="ds-tooltip-band-actions">Loading...</span></span>\
+                        </span>');
+      if (showFacebookFriends) {
+        $tooltip.addClass('ds-tooltip-fb-friends');
+      }
+      $this
+                .data('ds-tooltip-state', 'added')
+        .prepend($tooltip);
+      if ($("body").hasClass("ds-popup-v8")) {
+        adjustToolTipPosition($this, $tooltip);
+      }
+    }
+
+    if (timeout) clearTimeout(timeout);
+
+    if ($this.hasClass('no-popup')) {
+      $(this).find('.ds-tooltip, .ds-text').remove();
+    } else if (tooltipState != 'loaded' && tooltipState != 'requesting') {
+            timeout = setTimeout(function(){
+        var has_song = $this.hasClass('ds-player-show-state');
+        var loadURL = [(isBand ? "/band/" : "/event/"), triggerID, "/fpup"].join('');
+        if (for_facebook_app) { 
+          var tab_id = $('body').attr("ds-tab-id");
+          loadURL = "/contest/pagetab/" + tab_id + "/hover/" + triggerID;
+        }
+        var params = {};
+        if (has_song) {
+          params.has_song = true;
+        }
+        if (showFacebookFriends) {
+          params.version = 'fb';
+        }
+                params = $.param(params);
+        params && ( loadURL += '?' + params );
+
+        $this
+          .data('ds-tooltip-state', 'requesting')
+          .find('> .ds-tooltip > .ds-content')
+          .load(loadURL, null, function() {
+            $this.data('ds-tooltip-state', 'loaded');
+            // update ds-song status
+            if (has_song) {
+              // grab song node
+              var $ds_song = $this.find('.ds-song');
+              // read player status, gs-player change callbacks put it here
+              var player_state = $this.data('ds-player-state');
+
+              if (player_state == 'playing') {
+                $ds_song
+                  .addClass('ds-currently-playing')
+                  .removeClass('ds-currently-paused');
+              } else if (player_state == 'paused') {
+                $ds_song
+                  .addClass('ds-currently-paused')
+                  .removeClass('ds-currently-playing');
+              }
+            }
+
+            $this.find('.ds-add-remove').live('click', {isBand : isBand, triggerID: triggerID}, add_remove_click);
+          });
+      }, 400);
+    }
+
+        $this
+      .find('.ds-tooltip')
+        .bind('click', function(e){
+          e.preventDefault();
+          if ($(e.target).is('a')) {
+            location.href = e.target.href;
+          }
+        });
+
+    
+  },
+
+  function() {
+    // delete all previously created stuff
+    var $this = $(this);
+
+    $this
+      .removeClass('ds-hover')
+      .parent()
+        .removeClass('ds-active')
+    if ($this.hasClass('band-image')) {
+      $this.removeClass('ds-hover-image');
+    }
+    
+    if (timeout) clearTimeout(timeout);
+  }
+);
+})();
+  
+
+
+(function(){
+  var page_type = 'lineup',
+    eventType = 'mousedown',
+    page_event_id = 0;
+  
+    
+    $('li.ds-share-fb')
+    .find('a')
+      .bind(eventType, function(){
+        if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/share-facebook/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);      });
+  $('li.ds-share-tw')
+    .find('a')
+      .bind(eventType, function(){
+        if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/share-twitter/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);      });
+  $('li.ds-share-em')
+    .find('a')
+      .bind(eventType, function(){
+        if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/share-email/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);      });
+  $('li.ds-share-addthis')
+    .find('a')
+      .bind(eventType, function(){
+        if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/share-addthis/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);      });
+
+    $('a.ds-band-add')
+    .bind(eventType, function(){
+      if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/add-band/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);    });
+  $('a.ds-add-remove')
+    .live(eventType, function(){
+      var page_event_id = $(this).attr('band_id');
+      if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/add-band-hovercard/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);    });
+  $('a.ds-song')
+    .live(eventType, function(){
+      var page_event_id = $(this).attr('band_id');
+      if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/play-song/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);    });
+    
+    $('input.ds-comments-submit')
+    .live(eventType, function(){
+      var page_event_id = $(this).attr('band_id');
+      if(typeof t_string === 'undefined'){t_string = 0;} _gaq.push(['t2._trackPageview', '/vpv/epv/f-451/' + page_type + '/page/comment/local/0/' + page_event_id + '/none/0/0/' + t_string + '/']);    });
+
+})();
+
+
+    // current hostname 
+    var hostname_regex = new RegExp(location.hostname.split('.').slice(1).join('.'), 'i');
+    
+    $("a").each(function(){
+      /* 
+        we have to use "hostname" and not "href", because 
+        there might be our hostname in get attribute/value pairs 
+        like "http://twitter.com?status=go+to+HOSTNAME.COM"
+      */
+      if ( (!hostname_regex.test(this.hostname)) && !(this.href == "javascript:void(0);") ) {
+        $(this)
+          .addClass("external")
+          .attr("target","_blank");
+      }
+    });
+
+  });
+</script>
+    <script>var ds_lang = "en";</script>
+
+    
+  
+  <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-47417601-1']);
+  _gaq.push(['_setDomainName', 'bonnaroo.com']);
+  _gaq.push(['_setAllowLinker', true]);
+  _gaq.push(['_trackPageview']);
+      _gaq.push(['t2._setAccount', 'UA-68280-26']);
+    _gaq.push(['t2._setDomainName', 'lineup.bonnaroo.com']);
+    _gaq.push(['t2._setAllowLinker', true]);
+    _gaq.push(['t2._trackPageview']);
+    _gaq.push(['t3._setAccount', 'UA-68280-43']);
+    _gaq.push(['t3._setDomainName', 'lineup.bonnaroo.com']);
+    _gaq.push(['t3._setAllowLinker', true]);
+      (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+<script>(function() {
+  var _fbq = window._fbq || (window._fbq = []);
+  if (!_fbq.loaded) {
+    var fbds = document.createElement('script');
+    fbds.async = true;
+    fbds.src = '//connect.facebook.net/en_US/fbds.js';
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(fbds, s);
+    _fbq.loaded = true;
+  }
+  _fbq.push(['addPixelId', '314099748758216']);
+})();
+window._fbq = window._fbq || [];
+window._fbq.push(['track', 'PixelInitialized', {}]);
+</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=314099748758216&amp;ev=NoScript" /></noscript>
+
+
+</head>
+
+<body
+  ds-language = "en"
+  class="ds-popup-v8 ds-not-logged-in ds-lineup-page  not-logged-in html front node-type-basic-page
+  ">
+        <div id="fb-root"></div>
+      <script>
+        window.fbAsyncInit = function() {
+                FB.init({
+        appId   : '192031150893987',
+        status  : false,
+        cookie  : true,
+        xfbml   : true,
+        oauth   : true,
+        version : 'v2.0'
+      });
+
+          
+              if(window.location.pathname == "/login" || window.location.pathname == "/join"){
+      FB.Event.subscribe('auth.statusChange', function(response) {
+        if (response.status === 'connected') {
+          if (response.authResponse) {
+            sr = response.authResponse.signedRequest;
+            window.location = '/facebook/process-login?fb_sr='+sr;
+          }
+        }
+      });
+    }
+    
+
+          
+          $(document).ready( function() {
+            $('.ds-facebook-logout').click(function() {
+              FB.logout(function(response) {
+                window.location = '/logout';
+              });
+            });
+          });
+        };
+        (function(d){
+          var js, id = 'facebook-jssdk'; if (d.getElementById(id)) {return;}
+          js = d.createElement('script'); js.id = id; js.async = true;
+          js.src = "//connect.facebook.net/en_US/sdk.js";
+          d.getElementsByTagName('head')[0].appendChild(js);
+        }(document));
+      </script>
+  <div id="page-wrapper">
+  <div id="page">
+    
+    <div id="ds-header">
+                                <header id="section-header" class="section section-header">
+	<div id="zone-branding-wrapper" class="zone-wrapper zone-branding-wrapper clearfix">
+		<div class="branding-bg">
+		</div>
+		<div id="zone-branding" class="zone zone-branding clearfix container-24">
+			<div class="grid-24 region region-branding" id="region-branding">
+				<a class="connect-button" href="#connect-modal">Connect <br/><span class='second-row'>With Us</span><span class='arrows'>&gt;&gt;</span></a>
+				<h1 class="logo"><a href="http://bonnaroo.com/" title="2015 Bonnaroo Music Festival">2016 Bonnaroo Music Festival</a></h1>
+				<div class="region-inner region-branding-inner">
+					<div class="block block-block block-49 block-block-49 odd block-without-title" id="block-block-49">
+						<p class=""><a class="page-burst" href="http://bonnaroo.com/tickets">TICKETS ON<br>SALE NOW!</a></p>
+					</div>
+					<div class="block block-delta-blocks block-branding block-delta-blocks-branding even block-without-title" id="block-delta-blocks-branding"> 
+						<hgroup class="site-name-slogan element-invisible"><h2 class="site-name element-invisible">Bonnaroo 2016</h2></hgroup>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="zone-navigation-wrapper" class="zone-wrapper zone-navigation-wrapper clearfix">
+		<div id="zone-navigation" class="zone zone-navigation clearfix container-24">
+			<div class="grid-24 region region-main-navigation" id="region-main-navigation">
+				<div class="region-inner region-main-navigation-inner">
+					<div class="block block-menu-block block-1 block-menu-block-1 odd block-without-title" id="block-menu-block-1">
+						<div class="menu-block-wrapper menu-block-1 menu-name-main-menu parent-mlid-0 menu-level-1">
+							<ul class="menu">
+								<li class="first expanded menu-mlid-549"><a href="http://bonnaroo.com/tickets" id="tickets-li" class="tickets">Tickets + Accommodations</a>
+									<ul class="menu">
+										<li class="first leaf has-children menu-mlid-581"><a href="http://bonnaroo.com/tickets" title="Tickets &amp; Accommodations">Tickets</a></li>
+										<li class="leaf has-children menu-mlid-579"><a href="http://bonnaroo.com/on-site-accommodations">On-Site Accommodations</a></li>
+										<li class="last leaf has-children menu-mlid-580"><a href="http://bonnaroo.com/hotels-shuttles">Hotels + Shuttles</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-550"><a class="active" href="http://lineup.bonnaroo.com">Lineup</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-2134"><a href="http://lineup.bonnaroo.com/">2016 Lineup</a></li>
+										<li class="last leaf menu-mlid-720"><a href="http://lineup.bonnaroo.com/past/2015">Past Lineups</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-418"><a href="http://bonnaroo.com/activities">Activities</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-2139"><a href="http://bonnaroo.com/activities/christmas-barn">Christmas Barn</a></li>
+										<li class="leaf menu-mlid-582"><a href="http://bonnaroo.com/activities/arts-entertainment">Arts + Entertainment</a></li>
+										<li class="leaf menu-mlid-584"><a href="http://bonnaroo.com/activities/connect">Connect</a></li>
+										<li class="leaf menu-mlid-586"><a href="http://bonnaroo.com/activities/eat-drink">Eat + Drink</a></li>
+										<li class="leaf menu-mlid-585"><a href="http://bonnaroo.com/activities/environment-health-wellness">Save the Planet</a></li>
+										<li class="leaf menu-mlid-587"><a href="http://bonnaroo.com/activities/goods-gifts">Goods + Gifts</a></li>
+										<li class="last leaf menu-mlid-583"><a href="http://bonnaroo.com/activities/work-it-out">Work It Out</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-419"><a href="http://bonnaroo.com/festival-info">Festival Info</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-603"><a href="http://bonnaroo.com/festival-info#the-code">The Code + Terms</a></li>
+										<li class="leaf menu-mlid-589"><a href="http://bonnaroo.com/festival-info/safety">Health + Safety</a></li>
+										<li class="leaf menu-mlid-590"><a href="http://bonnaroo.com/on-site-accommodations#camping-info">Camping</a></li>
+										<li class="leaf menu-mlid-591"><a href="http://bonnaroo.com/festival-info/travel">Travel</a></li>
+										<li class="leaf menu-mlid-592"><a href="http://bonnaroo.com/festival-info/entry">Entry</a></li>
+										<li class="leaf menu-mlid-593"><a href="http://bonnaroo.com/festival-info/facilities">Facilities</a></li>
+										<li class="leaf menu-mlid-594"><a href="http://bonnaroo.com/festival-info/accessibility">Accessibility</a></li>
+										<li class="last leaf menu-mlid-2142"><a href="http://bonnaroo.com/census">Bonnaroo Census</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-1903"><a href="http://bonnaroo.com/media">Gallery</a></li>
+								<li class="expanded menu-mlid-421"><a href="http://bonnaroo.com/get-involved">Get Involved</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-596"><a href="http://bonnaroo.com/get-involved#bonnaroo-works-fund">Bonnaroo Works Fund</a></li>
+										<li class="leaf menu-mlid-597"><a href="http://bonnaroo.com/get-involved/sustainability">Sustainability</a></li>
+										<li class="leaf menu-mlid-598"><a href="http://bonnaroo.com/get-involved/contests">Contests</a></li>
+										<li class="leaf menu-mlid-600"><a href="http://bonnaroo.com/get-involved/partners">Partners + Non-Profits</a></li>
+										<li class="leaf menu-mlid-599"><a href="http://bonnaroo.com/get-involved/volunteers">Volunteers</a></li>
+										<li class="last leaf menu-mlid-601"><a href="http://bonnaroo.com/get-involved/vendors">Vendors</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-551"><a href="http://bonnaroo.com/news">News</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-713"><a href="http://bonnaroo.com/news/good-stuff">Good Stuff</a></li>
+										<li class="last leaf menu-mlid-714"><a href="http://bonnaroo.com/news/festival-news">Festival News</a></li>
+									</ul>
+								</li>
+								<!--<li class="leaf menu-mlid-552"><a href="http://bonnaroo.shop.musictoday.com/" target="_blank">Shop</a></li>-->
+								<li class="last leaf menu-mlid-658"><a href="http://bonnaroo.com/tickets#search-modal" title="Search" id="search-button" class="search-button">\</a></li>
+							</ul>
+						</div>
+					</div>
+					<div class="block block-menu-block secondary-navigation block-3 block-menu-block-3 even block-without-title" id="block-menu-block-3">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</header>
+                            <ul class="ds-login-links container-shadow">
+  
+    <li><a href="http://lineup.bonnaroo.com/login" class="blk">Log In <span class="grn">&raquo;</span></a></li>
+    <li><a href="http://lineup.bonnaroo.com/join" class="blk">Register <span class="grn">&raquo;</span></a></li>
+    <li></li>
+  
+</ul>    </div>
+    
+    <div id="main-wrapper">
+      <div id="main">
+        <div id="content">
+          <div id="ds-content" class="section" data-ds-hovercards-version="facebook">
+            <section id="section-content" class="section section-content">
+            
+  
+
+
+
+
+
+<div id="zone-illustration-wrapper" class="zone-wrapper zone-illustration-wrapper clearfix">
+	<div class="ill left"></div>
+	<div class="ill right"></div>
+	<div class="orb"></div>
+	<div class="orb orb-2"></div>
+	<div class="spacer">
+		<div id="zone-illustration" class="zone zone-illustration clearfix container-24">     
+			<div class="grid-24 region">
+
+<div class="ds-header">
+  <h1 class="main-title" style="color: #9DE9BB;">Bonnaroo 2016 Lineup</h1>
+  <div class="ds-custom-lineup">
+    
+      <div class="ds-custom-lineup-friends">
+        <p>4562 ROO FANS HAVE CREATED A CUSTOM SCHEDULE >> </p>
+      </div>
+      <div class="ds-create-a-lineup">
+        <a href="http://lineup.bonnaroo.com/login" class="ds-create-join ds-button" onclick="_gaq.push(['_trackEvent','create','lineup','lineup-top']);">Create a Line-up</a>
+      </div>
+    
+  </div>
+
+ <div class="ds-sort-lineup">
+  <div class="ds-arrange ds-arrange-year">
+    <h2>Year</h2>
+    <div>
+      <span>2016</span>
+      <span class="ds-dropdown-arrow"></span>
+      <ul>
+        <li><a href="/">2016</a></li><li><a href="/past/2015">2015</a></li><li><a href="/past/2014">2014</a></li><li><a href="/past/2013">2013</a></li><li><a href="/past/2012">2012</a></li><li><a href="/past/2011">2011</a></li><li><a href="/past/2010">2010</a></li><li><a href="/past/2009">2009</a></li><li><a href="/past/2008">2008</a></li><li><a href="/past/2007">2007</a></li><li><a href="/past/2006">2006</a></li><li><a href="/past/2005">2005</a></li><li><a href="/past/2004">2004</a></li><li><a href="/past/2003">2003</a></li><li><a href="/past/2002">2002</a></li>      </ul>
+    </div>
+  </div>
+
+
+  <div class="ds-arrange">
+  <h2>Arrange</h2>
+  <div>
+    
+    <span>Headliners First</span>
+    <span class="ds-dropdown-arrow"></span>
+    <ul>
+      
+      
+        <li><a href="/?sort=alpha">Alphabetical</a></li>
+      
+      
+                </ul>
+  </div>
+</div>
+  <div class="ds-share">
+  <h2>Share</h2>
+  <ul>
+    <li class="ds-share-fb">
+      <a href="http://www.facebook.com/sharer.php?u=http://lineup.bonnaroo.com?utm=2016_facebook_share_lineup" title="Post to Facebook" onclick="_gaq.push(['_trackEvent','share','facebook','lineup']);window.open(this.href,' sharer', 'toolbar=0, status=0, width=626, height=436'); return false;">Post to Facebook</a>
+    </li>
+    <li class="ds-share-tw">
+      <a href="http://twitter.com/?status=Check out who's at Bonnaroo! http://lineup.bonnaroo.com" target="_blank" title="Post to Twitter" onclick="_gaq.push(['_trackEvent','share','twitter','lineup']);">Post to Twitter</a>
+    </li>
+  </ul>
+</div>
+
+  </div>
+</div>
+
+
+        
+                                          
+  
+                                      
+      <div class="ds-lineup ds-player">
+            <ul class="band ds-level-override ds-tier-1" style="font-size: em;">
+        
+        
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/pearl-jam" class="band " id="32426">Pearl Jam</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/dead-and-company" class="band " id="971772">Dead & Company (2 Sets)</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lcd-soundsystem" class="band " id="45914">LCD Soundsystem</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/j-cole" class="band " id="54043">J. Cole</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/ellie-goulding-" class="band " id="129180">Ellie Goulding</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/macklmore-and-ryan-lewis" class="band " id="970218">Macklemore & Ryan Lewis</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/tame-impala-late-night-set" class="band " id="970483">Tame Impala (Late Night)</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/death-cab-for-cutie" class="band " id="46777">Death Cab for Cutie</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/m83-" class="band " id="110078">M83</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/haim" class="band " id="216899">Haim</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/halsey" class="band " id="710519">Halsey</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/ween" class="band " id="34201">Ween</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/jason-isbell" class="band " id="702888">Jason Isbell</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/chvrches" class="band " id="449934">CHVRCHES</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/miguel" class="band " id="559303">Miguel</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/chris-stapleton" class="band " id="288872">Chris Stapleton</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/judd-apatow-" class="band " id="971820">Judd Apatow & Friends</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-chainsmokers" class="band " id="441971">The Chainsmokers</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/superjam" class="band " id="134554">SuperJam</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/big-grams" class="band " id="932803">Big Grams (Big Boi + Phantogram)</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/band-of-horses" class="band " id="271684">Band of Horses</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/leon-bridges" class="band " id="744710">Leon Bridges</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/grace-potter" class="band " id="882770">Grace Potter</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/father-john-misty" class="band " id="316946">Father John Misty</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/adam-devine" class="band " id="499209">Adam Devine</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/purity-ring" class="band " id="134026">Purity Ring</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-claypool-lennon-delirium" class="band " id="971775">The Claypool Lennon Delirium</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/two-door-cinema-club" class="band " id="58836">Two Door Cinema Club</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/sam-hunt-" class="band " id="971847">Sam Hunt</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/flosstradamus" class="band " id="37287">Flosstradamus</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/zeds-dead" class="band " id="98822">Zeds Dead</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/adventure-club" class="band " id="166102">Adventure Club</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/tyler-the-creator-fnyjelyg" class="band " id="870534">Tyler the Creator</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/bridget-everett" class="band " id="167987">Bridget Everett</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/griz" class="band " id="219208">GriZ</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/mavis-staples" class="band " id="38316">Mavis Staples</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/touchpants-" class="band " id="971776">Touchpants</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lamb-of-god" class="band " id="35618">Lamb Of God</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/nathaniel-rateliff-the-night-sweats" class="band " id="966879">Nathaniel Rateliff & The Night Sweats</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/kurt-vile-and-the-violators" class="band " id="709410">Kurt Vile & The Violators</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/blood-orange" class="band " id="130136">Blood Orange</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lord-huron" class="band " id="109443">Lord Huron</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/rl-grime" class="band " id="264987">RL Grime</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/bluegrass-situation-superjam" class="band " id="970220">The Bluegrass Situation SuperJam Featuring Ed Helms and Friends</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/x-ambassadors" class="band " id="558825">X Ambassadors</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/st-lucia" class="band " id="216453">St. Lucia</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/piff-the-magic-dragon" class="band " id="911604">Piff the Magic Dragon</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lucius" class="band " id="139745">Lucius</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/vince-staples" class="band " id="335325">Vince Staples</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/third-eye-blind" class="band " id="45695">Third Eye Blind</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/cymande" class="band " id="132986">Cymande</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/misterwives" class="band " id="457071">MisterWives</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/clutch" class="band " id="32492">Clutch</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/goldlink" class="band " id="619476">GoldLink</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lettuce" class="band " id="119948">Lettuce</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/cashmere-cat" class="band " id="468123">Cashmere Cat</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/goddamn-jam" class="band " id="971773">Goddamn Comedy Jam</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/fidlar" class="band " id="145123">FIDLAR</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/ilbeyi" class="band " id="970219">Ibeyi</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/keys-n-krates" class="band " id="46240">Keys N Krates</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/sam-bush-band" class="band " id="305770">Sam Bush Band</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-wood-brothers" class="band " id="173371">The Wood Brothers</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/saint-motel" class="band " id="49855">Saint Motel</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/daughter" class="band " id="35253">Daughter</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-floozies" class="band " id="136262">The Floozies</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/marian-hill" class="band " id="604809">Marian Hill</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/kamasi-washington" class="band " id="257285">Kamasi Washington</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/garrett-borns" class="band " id="341913">BØRNS</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/post-malone" class="band " id="852458">Post Malone</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/shamir" class="band " id="717865">Shamir</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/allen-stone" class="band " id="61663">Allen Stone</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/brett-dennen" class="band " id="32502">Brett Dennen</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/oh-wonder" class="band " id="819344">Oh Wonder</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/boy-and-bear" class="band " id="122072">Boy & Bear</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/dungen" class="band " id="52095">Dungen</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/judah-and-the-lion" class="band " id="949946">Judah & the Lion</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/steve-gunn" class="band " id="879397">Steve Gunn</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/steep-canyon-rangers-" class="band " id="173009">Steep Canyon Rangers</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-oh-hellos" class="band " id="834280">The Oh Hellos</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-internet-" class="band " id="971846">The Internet</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/john-moreland" class="band " id="218001">John Moreland</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/andra-day" class="band " id="455576">Andra Day</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/anderson-east" class="band " id="193811">Anderson East</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/twin-peaks" class="band " id="93755">Twin Peaks</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/bully" class="band " id="373719">Bully</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/natalie-prass" class="band " id="122263">Natalie Prass</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/chicano-batman" class="band " id="125010">Chicano Batman</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/givers" class="band " id="53419">Givers</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/hermitude" class="band " id="282772">Hermitude</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/jarryd-james" class="band " id="846366">Jarryd James</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lizzo" class="band " id="667114">Lizzo</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/papadosio" class="band " id="80890">Papadosio</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/rayland-baxter" class="band " id="78051">Rayland Baxter</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/vulfpeck" class="band " id="592392">Vulfpeck</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/sara-watkins" class="band " id="32467">Sara Watkins</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-knocks" class="band " id="101833">The Knocks</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/waxahatchee" class="band " id="300881">Waxahatchee</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/beach-fossils-" class="band " id="58261">Beach Fossils</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/whilk-and-misky" class="band " id="588760">Whilk and Misky</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/hundred-waters-" class="band " id="346979">Hundred Waters</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/the-london-souls-" class="band " id="48531">The London Souls</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lolawolf" class="band " id="648632">Lolawolf</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/civil-twilight" class="band " id="52429">Civil Twilight</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/roman-gianarthur" class="band " id="152103">Roman GianArthur</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/lany" class="band " id="772253">LANY</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/con-brio" class="band " id="112334">Con Brio</a>
+            
+                      </li>
+                  <li class="w">
+            <span class="ds-bullet">•</span>
+            
+            
+              <a href="http://lineup.bonnaroo.com/band/flux-capacitor" class="band " id="192153">Flux Capacitor</a>
+            
+                      </li>
+              </ul>
+            </div>
+    
+  
+                            
+        
+<script>
+// using window onload, so we remove bullets only after the font has loaded
+// on the long term, something like google webfonts loader should be used
+$(window).load(function() {
+  $(".ds-lineup > ul > li").each(function() {
+    var $this = $(this), $prev = $this.prev();
+    if($this.position().left > $this.offsetParent().width() / 2){
+      $this.addClass("ds-reverse-hover");
+    }
+    if ($prev.length < 1 || ($this.offset().top > $prev.offset().top)) {
+      // if left offset is smaller than previous, we are at first element on the row
+      $this.addClass('ds-first');
+    }
+  });
+  if(typeof FB != "undefined"){
+    FB.Canvas.setSize();
+  }
+});
+</script>
+
+</div>
+</div>
+</div>
+</div>
+
+
+
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div id="footer">
+                                <footer id="section-footer" class="section section-footer">
+	<div id="zone-footer-wrapper" class="zone-wrapper zone-footer-wrapper clearfix">
+		<div class="grad"></div>
+		<div class="left"></div>
+		<div class="right"></div>
+		<div class="clouds">
+			<div class="footer-social-links">
+				<div class="container-24">
+					<div class="contact-links grid-24"> 
+						<a href="https://bonnaroo.tumblr.com" target="_blank" class="tumblr-footer"></a> 
+						<a href="https://www.facebook.com/bonnaroo" target="_blank" class="fb-footer"></a> 
+						<a href="https://twitter.com/bonnaroo" target="_blank" class="twitter-footer"></a> 
+						<a href="http://instagram.com/bonnaroo" target="_blank" class="ig-footer"></a> 
+						<a href="https://www.youtube.com/bonnaroo365" target="_blank" class="yt-footer"></a> 
+						<a href="http://open.spotify.com/user/127594937" target="_blank" class="spotify-footer"></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="footer-content-container">
+			<div class="container-24">
+				<div class="contact-links grid-24"> 
+					<a class="button grid-6 push-6" href="http://bonnaroo.com/contact-us">Contact Us</a> 
+					<a class="button grid-6 push-6" href="mailto:info@bonnaroo.com">Site Feedback</a>
+				</div>
+			</div>
+		<div class="clearfix"></div>
+		<div class="middle">
+			<div id="zone-footer" class="zone zone-footer clearfix container-24">
+				<div class="grid-24 region region-footer" id="region-footer">
+					<div class="block block-menu-block block-2 block-menu-block-2 odd block-without-title" id="block-menu-block-2">
+						<div class="menu-block-wrapper menu-block-2 menu-name-menu-footer-menu parent-mlid-0 menu-level-1">
+							<ul class="menu">
+								<li class="first expanded menu-mlid-577"><a href="http://bonnaroo.com/tickets">Tickets + Accommodations</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-605"><a href="http://bonnaroo.com/tickets" title="">Tickets</a></li>
+										<li class="leaf menu-mlid-606"><a href="http://bonnaroo.com/on-site-accommodations" title="">On-Site Accommodations</a></li>
+										<li class="last leaf menu-mlid-607"><a href="http://bonnaroo.com/hotels-shuttles">Hotels + Shuttles</a></li>
+									</ul>
+								</li>
+								<li class="collapsed menu-mlid-636 expanded"><a href="http://lineup.bonnaroo.com/">Lineup</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-605"><a href="http://lineup.bonnaroo.com/" title="">2016 Lineup</a></li>
+										<!--<li class="last leaf menu-mlid-605"><a href="http://lineup.bonnaroo.com/past/2015" title="">Past Lineups</a></li>-->
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-608"><a href="http://bonnaroo.com/activities">Activities</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-2412"><a href="http://bonnaroo.com/activities/christmas-barn">Christmas Barn</a></li>
+										<li class="leaf menu-mlid-609"><a href="http://bonnaroo.com/activities/arts-entertainment">Arts + Entertainment</a></li>
+										<li class="leaf menu-mlid-611"><a href="http://bonnaroo.com/activities/connect">Connect</a></li>
+										<li class="leaf menu-mlid-613"><a href="http://bonnaroo.com/activities/eat-drink">Eat + Drink</a></li>
+										<li class="leaf menu-mlid-612"><a href="http://bonnaroo.com/activities/environment-health-wellness">Save the Planet</a></li>
+										<li class="leaf menu-mlid-614"><a href="http://bonnaroo.com/activities/goods-gifts">Goods + Gifts</a></li>
+										<li class="leaf menu-mlid-610"><a href="http://bonnaroo.com/activities/work-it-out">Work It Out</a></li>
+										<li class="last leaf menu-mlid-2414"><a href="http://bonnaroo.com/census">Census</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-615"><a href="http://bonnaroo.com/festival-info">Festival Info</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-616"><a href="http://bonnaroo.com/festival-info" title="">The Code</a></li>
+										<li class="leaf menu-mlid-618"><a href="http://bonnaroo.com/festival-info/safety">Health + Safety</a></li>
+										<li class="leaf menu-mlid-619"><a href="http://bonnaroo.com/camping" title="">Camping</a></li>
+										<li class="leaf menu-mlid-620"><a href="http://bonnaroo.com/festival-info/travel" title="">Travel</a></li>
+										<li class="leaf menu-mlid-621"><a href="http://bonnaroo.com/festival-info/entry" title="">Entry</a></li>
+										<li class="leaf menu-mlid-622"><a href="http://bonnaroo.com/festival-info/facilities" title="">Facilities</a></li>
+										<li class="leaf menu-mlid-623"><a href="http://bonnaroo.com/festival-info/accessibility" title="">Accessibility</a></li>
+										<li class="last leaf menu-mlid-2419"><a href="http://bonnaroo.com/press">Press</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-624"><a href="http://bonnaroo.com/get-involved">Get Involved</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-625"><a href="http://bonnaroo.com/get-involved">Bonnaroo Works Fund</a></li>
+										<li class="leaf menu-mlid-626"><a href="http://bonnaroo.com/get-involved/sustainability" title="">Sustainability</a></li>
+										<li class="leaf menu-mlid-628"><a href="http://www.bonnaroo.com/get-involved/contests" title="">Contests</a></li>
+										<li class="leaf menu-mlid-628"><a href="http://bonnaroo.com/get-involved/volunteers" title="">Volunteers</a></li>
+										<li class="leaf menu-mlid-629"><a href="http://bonnaroo.com/get-involved/partners">Partners + Non-Profits</a></li>
+										<li class="last leaf menu-mlid-630"><a href="http://bonnaroo.com/get-involved/vendors">Vendors</a></li>
+									</ul>
+								</li>
+								<li class="expanded menu-mlid-633"><a href="http://bonnaroo.com/news">News</a>
+									<ul class="menu">
+										<li class="first leaf menu-mlid-1908"><a href="http://bonnaroo.com/news/good-stuff">Good Stuff</a></li>
+										<li class="leaf menu-mlid-1909"><a href="http://bonnaroo.com/news/festival-news">Festival News</a></li>
+										<!--<li class="last leaf menu-mlid-2125"><a href="http://bonnaroo.com/news/roo-radio">Roo Radio</a></li>-->
+									</ul>
+								</li>
+								<li class="last expanded menu-mlid-1904"><a href="http://bonnaroo.com/media">Gallery</a>
+									<!--<ul class="menu">
+										<li class="first last leaf menu-mlid-634"><a href="http://bonnaroo.shop.musictoday.com/">Shop</a></li>
+									</ul>-->
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<ul class="sponsor">
+				<li class="dostuff">Powered by <a href="http://dostuffmedia.com" class="external" target="_blank">DoStuff Media.</a> <a href="/privacy">Privacy</a> | <a href="/tos">Terms of Service</a></li>
+				<li><a href='http://bonnaroo.com/privacy' alt='privacy policy'>privacy policy</a></li>
+				<li><a href='http://bonnaroo.com/terms-of-use' alt='Terms of Service'>Terms</a></li>
+				<li><a href='http://bonnaroo.com/contact-us' alt='contact us'>Contact Us</a></li>
+				<li><a href="http://www.superflypresents.com" class="superfly"></a></li>
+				<li><a href="http://acentertainment.com/" class="acentertainment"></a></li>
+			</ul>
+		</div>
+	</div>
+</div>
+<div id="zone-modal-wrapper" class="zone-wrapper zone-modal-wrapper clearfix">
+	<div id="zone-modal" class="zone zone-modal clearfix container-24">
+		<div class="search-modal anim-modal mfp-hide" id="search-modal" tabindex="-1">
+			<div class="grid-24 region region-search" id="region-search">
+				<div class="region-inner region-search-inner"> 
+					<section class="block block-search block-form block-search-form odd" id="block-search-form">
+						<h2 class="block-title">Search</h2>
+						<form action="http://bonnaroo.com/" method="post" id="search-block-form" accept-charset="UTF-8">
+							<div>
+								<div class="container-inline">
+									<div class="form-item form-type-textfield form-item-search-block-form"> 
+										<label class="element-invisible" for="edit-search-block-form--2">Search </label> 
+										<input title="Enter the terms you wish to search for." type="text" id="edit-search-block-form--2" name="search_block_form" value="" size="15" maxlength="128" class="form-text" />
+									</div>
+									<div class="form-actions form-wrapper" id="edit-actions">
+										<input type="submit" id="edit-submit" name="op" value="Search" class="form-submit" />
+									</div>
+									<input type="hidden" name="form_build_id" value="form-mFpdNS_iZU4jrv5EfKoJ01yj8YpwMuC6AEO9F3WHOSE" />
+									<input type="hidden" name="form_id" value="search_block_form" />
+								</div>
+							</div>
+						</form>
+					</section>
+				</div>
+			</div>
+		</div>
+		<div class="connect-modal anim-modal mfp-hide" id="connect-modal" tabindex="-1">
+			<div class="social-links">
+				<h2>STAY CONNECTED</h2>
+					<div class="items"> <a href="https://bonnaroo.tumblr.com" target="_blank" class="roo-connect"></a> <a href="https://www.facebook.com/bonnaroo" target="_blank" class="fb-connect"></a> <a href="https://twitter.com/bonnaroo" target="_blank" class="twitter-connect"></a> <a href="http://instagram.com/bonnaroo" target="_blank" class="ig-connect"></a> <a href="https://www.youtube.com/bonnaroo365" target="_blank" class="yt-connect"></a> <a href="http://open.spotify.com/user/127594937" target="_blank" class="spotify-connect"></a></div>
+				<h2>GET UPDATES</h2>
+			</div>
+			<div class="blue-style-bg">
+			</div>
+			<div class="form-item-container">
+				<div class="grid-24 region region-connect" id="region-connect">
+					<div class="region-inner region-connect-inner">
+						<div class="block block-webform block-client-block-146 block-webform-client-block-146 odd block-without-title" id="block-webform-client-block-146">
+							<form class="webform-client-form webform-hints" enctype="multipart/form-data" action="http://bonnaroo.com/form/newsletter-signup-webform" method="post" id="webform-client-form-146" accept-charset="UTF-8">
+								<div>
+									<div class="form-item webform-component webform-component-email" id="webform-component-email-address"> 
+										<label class="element-invisible" for="edit-submitted-email-address">Email Address <span class="form-required" title="This field is required.">*</span></label> 
+										<input class="email webform-hints-field form-text form-email required" title="Email Address" placeholder="Email Address" type="email" id="edit-submitted-email-address" name="submitted[email_address]" size="60" />
+									</div>
+									<input type="hidden" name="details[sid]" />
+									<input type="hidden" name="details[page_num]" value="1" />
+									<input type="hidden" name="details[page_count]" value="1" />
+									<input type="hidden" name="details[finished]" value="0" />
+									<input type="hidden" name="form_build_id" value="form-Dpm8zd3qox9q4XrhYsizV_wNcr5uLacZKEmxEXE08nY" />
+									<input type="hidden" name="form_id" value="webform_client_form_146" />
+									<div class="form-actions form-wrapper" id="edit-actions--2">
+										<input type="submit" id="edit-submit--2" name="op" value="Submit" class="form-submit" />
+									</div>
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+</footer>
+
+
+
+
+
+
+<script type="text/javascript">
+
+$("#search-block-form").submit(function(e){
+e.preventDefault();
+window.location.href = "http://www.bonnaroo.com/search/node/" + $("#search-block-form").find("input[type='text']").val();
+});
+
+var tester = window.location.pathname.match(/\d{4}$/);
+if(tester && tester.length == 1){
+  $(".ds-header > h1").text("Bonnaroo "+tester[0]+" Lineup")
+  $(".ds-header > h1").css({"color":"#fff"})
+  $(".ds-header > h1").text("Bonnaroo "+tester[0]+" Lineup")
+  $(".ds-header .ds-arrange").addClass("ds-arrange-year");
+} else if($(".ds-lineup").length == 2){
+  $(".ds-lineup:nth-last-child(2)").append("<h3 class='plus-many-more' style='padding-left:1.25%;clear: both;margin-top:4em; color: #00C411; text-align: center;font-size:30px;'>Plus Many More To Be Announced!</h3>")
+  $(".ds-lineup:nth-last-child(2)").append("<h3 class='ds-lineup-subject-change' style='padding-left:1.25%;'>Lineup subject to change without notice.</h3>")
+} else if($(".ds-lineup").length == 1){
+  $(".ds-lineup:nth-last-child(2)").append("<h3 class='plus-many-more' style='padding-top: 3em;  padding-left:1.25%;clear: both;margin-top:2em; color: #00C411; text-align: center;font-size:30px;'>Plus Many More To Be Announced!</h3>")
+$(".ds-lineup:nth-last-child(2)").append("<h3 class='ds-lineup-subject-change' style='padding-left:1.25%; text-align: center;'>Lineup subject to change without notice.</h3>")
+}  else if($(".ds-lineup-page").length == 1){
+  $(".ds-lineup-cols-wrapper").append("<h3 class='plus-many-more' style='padding-top: 3em;padding-left:1.25%;clear: both;margin-top:4em; color: #00C411; text-align: center;font-size:30px;'>Plus Many More To Be Announced!</h3>")
+  $(".ds-lineup-cols-wrapper").append("<h3 class='ds-lineup-subject-change' style='padding-left:1.25%; text-align: center;'>Lineup subject to change without notice.</h3>")
+} else if($(".ds-user-lineup-page").length == 1){
+  $(".ds-lineup-cols-wrapper").append("<h3 class='plus-many-more' style='padding-top: 3em;padding-left:1.25%;clear: both;margin-top:4em; color: #00C411; text-align: center;font-size:30px;'>Plus Many More To Be Announced!</h3>")
+  $(".ds-lineup-cols-wrapper").append("<h3 class='ds-lineup-subject-change' style='padding-left:1.25%; text-align: center;'>Lineup subject to change without notice.</h3>")
+}  else if ($("img[alt='Broo-em-img2']").length > 0){
+  $("img[alt='Broo-em-img2']").css("margin-bottom","150px")
+  $(".ds-header").prepend("<h1 class='main-title' style='color: #fff;margin-bottom:1em !important;'>Bonnaroo 2016 Lineup</h1>")
+}
+
+if($(".ds-schedule").length > 0){
+  $("html").addClass("schedule-page");
+}
+
+if($(".ds-lineup.ds-archive-lineup").length > 0){
+  $("html").addClass("archive-page");
+}
+
+
+function getMonthName(d){
+  var month=new Array();
+  month[0]="January";
+  month[1]="February";
+  month[2]="March";
+  month[3]="April";
+  month[4]="May";
+  month[5]="June";
+  month[6]="July";
+  month[7]="August";
+  month[8]="September";
+  month[9]="October";
+  month[10]="November";
+  month[11]="December";
+  return month[d.getMonth()];
+}
+
+function getDayName(d){
+  var day=new Array();
+  day[0]="Sunday";
+  day[1]="Monday";
+  day[2]="Tuesday";
+  day[3]="Wednesday";
+  day[4]="Thursday";
+  day[5]="Friday";
+  day[6]="Saturday";
+  return day[d.getDay()];
+}
+
+if(window.location.pathname.match(/\/events+\/(\d{4})+\/(\d{2})+\/(\d{2})/gi)){
+  var newStr = window.location.pathname.replace(/\/events+\/(\d{4})+\/(\d{2})+\/(\d{2})/gi, "$1/$2/$3");
+  var newStrSplit = newStr.split("/")
+  if(newStrSplit.length > 2){
+    if(newStr.slice(-1) == "/"){
+      newStr = newStr.slice(0, - 1); 
+    }
+    var date = new Date(newStr);
+    $('.ds-schedule').prepend("<h2 style='top:0px;' class='ds-lineup-header ds-lineup-header-320'>" + getDayName(date) + ", " + getMonthName(date) + " " + newStrSplit[2] + "</h2>");
+  }
+} else if(window.location.pathname.match(/schedule+\/(\d{4})+\/(\d{2})+\/(\d{2})/gi)){
+  var newStr = window.location.pathname.replace(/\/user\/\d+\/schedule+\/(\d{4})+\/(\d{2})+\/(\d{2})/gi, "$1/$2/$3");
+  var newStrSplit = newStr.split("/")
+  if(newStrSplit.length > 2){
+    var date = new Date(newStr);
+    $('.ds-schedule').prepend("<h2 style='top:0px;' class='ds-lineup-header ds-lineup-header-320'>" + getDayName(date) + ", " + getMonthName(date) + " " + newStrSplit[2] + "</h2>");
+  }
+}
+
+
+</script>
+
+
+
+
+
+<script>
+  $(".ds-arrange > div").click(function(){
+    $(this).find("ul").toggle();
+  });
+</script>
+
+<script>
+$(".ds-schedule-days").last().after("<h2 class='subject-change' style='margin-top: 4em;font-size: 20px;clear:both;font-weight:bold;color:#001839;text-align:center;'>SCHEDULE SUBJECT TO CHANGE WITHOUT NOTICE</h2>");
+</script>
+
+
+
+
+
+<script>
+$("li.ds-lineup-cols:nth-child(1) h3").text("Thurs, Jun 9");
+$("li.ds-lineup-cols:nth-child(2) h3").text("Fri, Jun 10");
+$("li.ds-lineup-cols:nth-child(3) h3").text("Sat, Jun 11");
+$("li.ds-lineup-cols:nth-child(4) h3").text("Sun, Jun 12");
+</script>
+                          </div>
+    
+  </div>
+  </div>
+    <script src="http://s7.addthis.com/js/200/addthis_widget.js"></script>
+
+    <div id="ds-fest-modal-content"><span class="ds-modal-loading">Please wait...</span></div>
+<script type="text/javascript">if (!NREUMQ.f) { NREUMQ.f=function() {
+NREUMQ.push(["load",new Date().getTime()]);
+var e=document.createElement("script");
+e.type="text/javascript";
+e.src=(("http:"===document.location.protocol)?"http:":"https:") + "//" +
+  "js-agent.newrelic.com/nr-100.js";
+document.body.appendChild(e);
+if(NREUMQ.a)NREUMQ.a();
+};
+NREUMQ.a=window.onload;window.onload=NREUMQ.f;
+};
+NREUMQ.push(["nrfj","bam.nr-data.net","523568d535","2038250","IVtXQxNYClxVEExcCgZRQRgIWQJVSA==",0,262,new Date().getTime(),"","","","",""]);</script></body>
+</html>

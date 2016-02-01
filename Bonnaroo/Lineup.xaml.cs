@@ -5,9 +5,11 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -35,29 +37,28 @@ namespace Bonnaroo
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            bool exists = await library.checkIfFileExists("lineupLandingPage");
+            /*bool exists = await library.checkIfFileExists("lineupLandingPage");
             if (!exists)
             {
-                try
-                {
-                    WebRequest request = WebRequest.Create("http://lineup.bonnaroo.com/");
-                    WebResponse response = await request.GetResponseAsync();
-                    Stream data = response.GetResponseStream();
-                    string html = String.Empty;
-                    using (StreamReader sr = new StreamReader(data))
-                    {
-                        html = sr.ReadToEnd();
-                    }
-                    await library.writeFile("lineupLandingPage", html);
-                }
-                catch (Exception ex)
-                {
-                    Debug.WriteLine(ex);
-                }
+                HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create("http://lineup.bonnaroo.com/");
+                myRequest.Method = "GET";
+                myRequest.Headers["User-Agent"] = "Mozilla / 5.0(Linux; Android 4.0.4; Galaxy Nexus Build / IMM76B) AppleWebKit / 535.19(KHTML, like Gecko) Chrome / 18.0.1025.133 Mobile Safari/ 535.19";
+                WebResponse myResponse = await myRequest.GetResponseAsync();
+                StreamReader sr = new StreamReader(myResponse.GetResponseStream());
+                string html = sr.ReadToEnd();
+                HTMLStrings.Add(new HTMLData(html));
+                HtmlSource.Source = HTMLStrings;
             }
-            string res = await library.readFile("lineupLandingPage");
-            HTMLStrings.Add(new HTMLData(res));
-            HtmlSource.Source = HTMLStrings;
+            else
+            {
+                string res = await library.readFile("lineupLandingPage");
+                HTMLStrings.Add(new HTMLData(res));
+                HtmlSource.Source = HTMLStrings;
+            }*/
+            //string res = await library.readFile("");
+            string path = @"Files\lineupLandingPage";
+            StorageFolder InstalledFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
+            StorageFile file = await InstalledFolder.GetFileAsync(path);
 
         }
 

@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Collections.ObjectModel;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
@@ -34,28 +35,29 @@ namespace Bonnaroo
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            bool exists = await library.checkIfFileExists("lineupLandingPage");
+            bool exists = await library.checkIfFileExists("newsupLandingPage");
             if (!exists)
             {
-                WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
-                WebResponse response = await request.GetResponseAsync();
-                Stream data = response.GetResponseStream();
-                string html = String.Empty;
-                using (StreamReader sr = new StreamReader(data))
-                {
-                    html = sr.ReadToEnd();
-                }
-                await library.writeFile("lineupLandingPage", html);
+                Debug.WriteLine("news file does not exist");
+                string html = await library.makeWebRequest("http://www.bonnaroo.com/news");
+                await library.writeFile("newsLandingPage", html);
+                HTMLStrings.Add(new HTMLData(html));
+                HtmlSource.Source = HTMLStrings;
             }
-            string res = await library.readFile("lineupLandingPage");
-            HTMLStrings.Add(new HTMLData(res));
-            HtmlSource.Source = HTMLStrings;
+            else
+            {
+                string res = await library.readFile("newsupLandingPage");
+
+                HTMLStrings.Add(new HTMLData(res));
+                HtmlSource.Source = HTMLStrings;
+            }
 
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(MainPage));
         }
 
         private void Lineup_Click(object sender, RoutedEventArgs e)
@@ -65,32 +67,38 @@ namespace Bonnaroo
 
         private void Gallery_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(gallery));
         }
 
         private void Info_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(info));
         }
 
         private void About_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(about));
         }
 
         private void tickets_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(tickets));
         }
 
         private void activity_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(activity));
         }
 
         private void involved_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(involved));
         }
 
         private void news_Click(object sender, RoutedEventArgs e)
@@ -107,6 +115,21 @@ namespace Bonnaroo
             }
 
             public string HTML { get; set; }
+        }
+
+        private async void refreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            try
+            {
+                string html = await library.makeWebRequest("http://www.bonnaroo.com/news");
+                await library.writeFile("newsLandingPage", html);
+                HTMLStrings.Add(new HTMLData(html));
+                HtmlSource.Source = HTMLStrings;
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
         }
     }
 }
