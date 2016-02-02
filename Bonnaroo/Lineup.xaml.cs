@@ -18,6 +18,7 @@ using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
 
+
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
 namespace Bonnaroo
@@ -37,29 +38,21 @@ namespace Bonnaroo
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            /*bool exists = await library.checkIfFileExists("lineupLandingPage");
-            if (!exists)
+            
+           
+            if(await library.checkIfFileExists("lineupLandingPage"))
             {
-                HttpWebRequest myRequest = (HttpWebRequest)WebRequest.Create("http://lineup.bonnaroo.com/");
-                myRequest.Method = "GET";
-                myRequest.Headers["User-Agent"] = "Mozilla / 5.0(Linux; Android 4.0.4; Galaxy Nexus Build / IMM76B) AppleWebKit / 535.19(KHTML, like Gecko) Chrome / 18.0.1025.133 Mobile Safari/ 535.19";
-                WebResponse myResponse = await myRequest.GetResponseAsync();
-                StreamReader sr = new StreamReader(myResponse.GetResponseStream());
-                string html = sr.ReadToEnd();
+                string html = await library.readFile("lineupLandingPage");
                 HTMLStrings.Add(new HTMLData(html));
                 HtmlSource.Source = HTMLStrings;
+                Debug.WriteLine("Lineup webpage already exists. Reading and displaying html");
             }
             else
             {
-                string res = await library.readFile("lineupLandingPage");
-                HTMLStrings.Add(new HTMLData(res));
-                HtmlSource.Source = HTMLStrings;
-            }*/
-            //string res = await library.readFile("");
-            string path = @"Files\lineupLandingPage";
-            StorageFolder InstalledFolder = Windows.ApplicationModel.Package.Current.InstalledLocation;
-            StorageFile file = await InstalledFolder.GetFileAsync(path);
-
+                Debug.WriteLine("File doesn't exist");
+                myWebView.Navigate(new Uri("http://lineup.bonnaroo.com/?sort=alpha"));
+            }
+            /**/
         }
 
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -124,6 +117,24 @@ namespace Bonnaroo
             }
 
             public string HTML { get; set; }
+        }
+
+        private async void refreshButton_Click(object sender, RoutedEventArgs e)
+        {
+            myWebView.Navigate(new Uri("http://lineup.bonnaroo.com/"));
+            string pagecontent = await myWebView.InvokeScriptAsync("eval", new string[] { "document.documentElement.innerHTML;" });
+            await library.writeFile("lineupLandingPage", pagecontent);
+        }
+
+        private async void myWebView_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
+        {
+           
+                Debug.WriteLine("In navigation completed");
+                string pagecontent = await myWebView.InvokeScriptAsync("eval", new string[] { "document.documentElement.innerHTML;" });
+                //Debug.WriteLine(pagecontent);
+                await library.writeFile("lineupLandingPage", pagecontent);
+                Debug.WriteLine("In lineup navigation completed : Writing html to file.");
+            
         }
     }
 }

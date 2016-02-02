@@ -35,20 +35,27 @@ namespace Bonnaroo
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
         {
-            bool exists = await library.checkIfFileExists("webLandingPage");
-            if (!exists)
+            try
             {
-                //WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
-                string html = await library.makeWebRequest("http://www.bonnaroo.com/");
-                await library.writeFile("webLandingPage", html);
-                HTMLStrings.Add(new HTMLData(html));
-                HtmlSource.Source = HTMLStrings;
+                bool exists = await library.checkIfFileExists("webLandingPage");
+                if (!exists)
+                {
+                    //WebRequest request = WebRequest.Create("http://www.bonnaroo.com/");
+                    string html = await library.makeWebRequest("http://www.bonnaroo.com/");
+                    await library.writeFile("webLandingPage", html);
+                    HTMLStrings.Add(new HTMLData(html));
+                    HtmlSource.Source = HTMLStrings;
+                }
+                else
+                {
+                    string res = await library.readFile("webLandingPage");
+                    HTMLStrings.Add(new HTMLData(res));
+                    HtmlSource.Source = HTMLStrings;
+                }
             }
-            else
+            catch (Exception ex)
             {
-                string res = await library.readFile("webLandingPage");
-                HTMLStrings.Add(new HTMLData(res));
-                HtmlSource.Source = HTMLStrings;
+                Debug.WriteLine("Exception in Home :" + ex);
             }
 
         }
@@ -132,6 +139,27 @@ namespace Bonnaroo
             {
                 Debug.WriteLine(ex);
             }
+        }
+
+        private void myWebView_NewWindowRequested(WebView sender, WebViewNewWindowRequestedEventArgs args)
+        {
+            Debug.WriteLine("In new window requested");
+
+            newWebView.Navigate(args.Uri);
+            //contentGrid.Children.Add(newWebView);
+            args.Handled = true;
+        }
+
+        private void newWebView_NewWindowRequested(WebView sender, WebViewNewWindowRequestedEventArgs args)
+        {
+            Debug.WriteLine("In new webview window requested.");
+        }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            //newWebView.Navigate(new Uri("https://www.facebook.com/v2.0/dialog/oauth?scope=user_birthday%2Cemail%2Cuser_likes%2Cuser_location&response_type=none&seen_revocable_perms_nux=false&ref=LoginButton&auth_type=&default_audience&redirect_uri=https:%2F%2Fwww.facebook.com%2Fdialog%2Freturn%2Farbiter%3Frelation%3Dopener%26close%3Dtrue%23origin%3Dhttp%253A%252F%252Flineup.bonnaroo.com%252Ff31b0d1331f7368&state=fc5ac660006638&app_id=192031150893987&client_id=192031150893987&display=touch"));
+            newWebView.Navigate(new Uri("http://lineup.bonnaroo.com/user/3411531/bands"));
+            Debug.WriteLine("How did it go?");
         }
     }
 }

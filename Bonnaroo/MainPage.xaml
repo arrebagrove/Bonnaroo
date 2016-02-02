@@ -11,17 +11,19 @@
         <CommandBar>
             <CommandBar.PrimaryCommands>
                 <AppBarButton Name="Home" Label="Home" Icon="Home" Click="Home_Click"></AppBarButton>
-                <AppBarButton Name="LineupButton" Label="Lineup" Visibility ="Collapsed" Icon="List" Click="Lineup_Click"></AppBarButton>
-                <AppBarButton Name="galleryButton" Label="Gallery" Icon="Camera" Click="Gallery_Click"></AppBarButton>
+                <AppBarButton Name="LineupButton" Label="Lineup" Visibility ="Visible" Icon="List" Click="Lineup_Click"></AppBarButton>
+                
                 <AppBarButton Name="infoButton" Label="Festival Info" Icon="MusicInfo" Click="Info_Click"></AppBarButton>
                 <AppBarButton Name="refreshButton" Label="Refresh" Icon="Refresh" Click="refreshButton_Click"></AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
                 <AppBarButton Label="About the App" Name="aboutButton" Click="About_Click"></AppBarButton>
+                <AppBarButton Name="galleryButton" Label="Gallery" Icon="Camera" Click="Gallery_Click"></AppBarButton>
                 <AppBarButton Label="Tickets + Accomodation" Name="ticketsButton" Click="tickets_Click"></AppBarButton>
                 <AppBarButton Label="Activites" Name="activityButton" Click="activity_Click"></AppBarButton>
                 <AppBarButton Label="Get Involved" Name="involvedButton" Click="involved_Click"></AppBarButton>
                 <AppBarButton Label="News" Name="newsButton" Click="news_Click"></AppBarButton>
+                <!--<AppBarButton Label="Login with Facebook" Click="AppBarButton_Click"></AppBarButton>-->
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -42,7 +44,9 @@
                         <CollectionViewSource x:Name="HtmlSource"/>
                     </ResourceDictionary>
                 </Grid.Resources>
-                <WebView x:Name="myWebView" local:MyExtensions.HTML="{Binding Source={StaticResource HtmlSource}, Path=HTML}" Grid.Row="1"/>
+                <WebView x:Name="myWebView" local:MyExtensions.HTML="{Binding Source={StaticResource HtmlSource}, Path=HTML}" Grid.Row="1"
+                         NewWindowRequested="myWebView_NewWindowRequested"/>
+                <WebView x:Name="newWebView" Grid.Row="1" NewWindowRequested="newWebView_NewWindowRequested"></WebView>
             </Grid>
         </Grid>
 

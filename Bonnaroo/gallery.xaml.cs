@@ -60,7 +60,8 @@ namespace Bonnaroo
 
         private void Lineup_Click(object sender, RoutedEventArgs e)
         {
-
+            Frame rootFrame = Window.Current.Content as Frame;
+            rootFrame.Navigate(typeof(Lineup));
         }
 
         private void Gallery_Click(object sender, RoutedEventArgs e)

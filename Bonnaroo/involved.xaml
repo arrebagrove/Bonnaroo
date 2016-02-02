@@ -11,13 +11,14 @@
         <CommandBar>
             <CommandBar.PrimaryCommands>
                 <AppBarButton Name="Home" Label="Home" Icon="Home" Click="Home_Click"></AppBarButton>
-                <AppBarButton Name="LineupButton" Visibility="Collapsed" Label="Lineup" Icon="List" Click="Lineup_Click"></AppBarButton>
-                <AppBarButton Name="galleryButton" Label="Gallery" Icon="Camera" Click="Gallery_Click"></AppBarButton>
+                <AppBarButton Name="LineupButton" Visibility="Visible" Label="Lineup" Icon="List" Click="Lineup_Click"></AppBarButton>
+                
                 <AppBarButton Name="infoButton" Label="Festival Info" Icon="MusicInfo" Click="Info_Click"></AppBarButton>
                 <AppBarButton Name="refreshButton" Label="Refresh Page" Icon="Refresh" Click="refreshButton_Click"></AppBarButton>
             </CommandBar.PrimaryCommands>
             <CommandBar.SecondaryCommands>
                 <AppBarButton Label="About the App" Name="aboutButton" Click="About_Click"></AppBarButton>
+                <AppBarButton Name="galleryButton" Label="Gallery" Icon="Camera" Click="Gallery_Click"></AppBarButton>
                 <AppBarButton Label="Tickets + Accomodation" Name="ticketsButton" Click="tickets_Click"></AppBarButton>
                 <AppBarButton Label="Activites" Name="activityButton" Click="activity_Click"></AppBarButton>
                 <AppBarButton Label="Get Involved" Name="involvedButton" Click="involved_Click"></AppBarButton>
