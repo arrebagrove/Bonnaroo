@@ -132,5 +132,10 @@ namespace Bonnaroo
                 Debug.WriteLine(ex);
             }
         }
+
+        private void Pivot_SelectionChanged(object sender, SelectionChangedEventArgs e)
+        {
+            
+        }
     }
 }

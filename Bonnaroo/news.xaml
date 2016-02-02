@@ -21,7 +21,7 @@
                 <AppBarButton Label="Tickets + Accomodation" Name="ticketsButton" Click="tickets_Click"></AppBarButton>
                 <AppBarButton Label="Activites" Name="activityButton" Click="activity_Click"></AppBarButton>
                 <AppBarButton Label="Get Involved" Name="involvedButton" Click="involved_Click"></AppBarButton>
-                <AppBarButton Label="News" Name="newsButton" Click="news_Click"></AppBarButton>
+                <AppBarButton Label="News and Social" Name="newsButton" Click="news_Click"></AppBarButton>
             </CommandBar.SecondaryCommands>
         </CommandBar>
     </Page.BottomAppBar>
@@ -29,12 +29,30 @@
     <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
         <Grid.RowDefinitions>
             <RowDefinition Height="Auto"></RowDefinition>
+            <!--<RowDefinition Height="Auto"></RowDefinition> -->
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Grid Grid.Row="0" Background="#59128c">
-            <TextBlock Text="News" Foreground="White" FontSize="20" Margin="5" HorizontalAlignment="Center"></TextBlock>
+            <TextBlock Text="News and Social" Foreground="White" FontSize="20" Margin="5" HorizontalAlignment="Center"></TextBlock>
         </Grid>
-
+        <!--<Pivot Grid.Row="1" Background="#e6e6e6" SelectionChanged="Pivot_SelectionChanged">
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="News" FontWeight="SemiBold" Foreground="#59128c"></TextBlock>
+                        <Border BorderBrush="#59128c" BorderThickness="1"></Border>
+                    </StackPanel>
+                </PivotItem.Header>
+            </PivotItem>
+            <PivotItem>
+                <PivotItem.Header>
+                    <StackPanel Orientation="Vertical">
+                        <TextBlock Text="Social" FontWeight="SemiBold" Foreground="#c58af0"></TextBlock>
+                        <Border Opacity="0" BorderBrush="#59128c" BorderThickness="1"></Border>
+                    </StackPanel>
+                </PivotItem.Header>
+            </PivotItem>
+        </Pivot> -->
         <Grid Grid.Row="1">
             <Grid Name="contentGrid">
                 <Grid.Resources>
