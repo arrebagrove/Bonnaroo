@@ -1,0 +1,46 @@
+﻿<Page
+    x:Class="Bonnaroo.ArtistPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Bonnaroo"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="200"></RowDefinition>
+            <RowDefinition Height="Auto"></RowDefinition>
+            <RowDefinition Height="*"></RowDefinition>
+        </Grid.RowDefinitions>
+        <Grid Grid.Row="0" x:Name="artistImage"></Grid>
+        <WebView Grid.Row="2" x:Name="myWebView" NavigationCompleted="myWebView_NavigationCompleted" Visibility="Collapsed"></WebView> 
+        <Grid Grid.Row="1">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+                <ColumnDefinition Width="*"></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Grid Grid.Column="0" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Vertical">
+                    <Button HorizontalAlignment="Stretch" Background="{x:Bind Null}" x:Name="scheduleButton" Click="scheduleButton_Click">
+                        <Button.Content>
+                            <TextBlock Text="Schedule" FontSize="15" Grid.Row="0"></TextBlock>
+                        </Button.Content>
+                    </Button>
+                    <Border x:Name="scheduleBorder" BorderBrush="#59128c" BorderThickness="4"></Border>
+                </StackPanel>
+            </Grid>
+
+            <Grid Grid.Column="1" HorizontalAlignment="Stretch">
+                <StackPanel Orientation="Vertical">
+                    <Button HorizontalAlignment="Stretch" Background="{x:Bind Null}" x:Name="aboutButton" Click="aboutButton_Click">
+                        <Button.Content>
+                            <TextBlock Text="About" FontSize="15" Grid.Row="0"></TextBlock>
+                        </Button.Content>
+                    </Button>
+                    <Border x:Name="aboutBorder" BorderBrush="#59128c" BorderThickness="4" Visibility="Collapsed"></Border>
+                </StackPanel>
+            </Grid>
+        </Grid>
+    </Grid>
+</Page>
