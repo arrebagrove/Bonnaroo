@@ -44,19 +44,27 @@
                       ItemsSource="{x:Bind artists}"
                       IsItemClickEnabled="True"
                       ItemClick="myListView_ItemClick">
+                <ListView.ItemContainerStyle>
+                    <Style TargetType="ListViewItem">
+                        <Setter Property="HorizontalContentAlignment" Value="Stretch"></Setter>
+                    </Style>
+                </ListView.ItemContainerStyle>
                 <ListView.ItemTemplate>
-                    <DataTemplate x:DataType="data:lineupArtists">
-                        <StackPanel Orientation="Horizontal">
-                            <Image Height='50' Width="50"></Image>
-                            <TextBlock Text="{x:Bind name}"
+                    <DataTemplate x:DataType="data:lineupArt">
+                        <StackPanel Orientation="Vertical">
+                            <StackPanel Orientation="Horizontal">
+                                <Image Source="{x:Bind artistPhotoPath}" Height='60' Width="60"></Image>
+                                <TextBlock Text="{x:Bind name}" Margin="20"
                                        Foreground="#236AAC" FontFamily="Segoe UI"
-                                       FontSize="20" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                                       FontSize="17" HorizontalAlignment="Center" VerticalAlignment="Center"></TextBlock>
+                            </StackPanel>
+                            <Border BorderBrush="#e6e6e6" BorderThickness="0,0,0,1"></Border>
                         </StackPanel>
                     </DataTemplate>
                 </ListView.ItemTemplate>
             </ListView>
         </Grid>
-        <Grid Grid.Row="1">
+        <Grid Grid.Row="1" Height="10" Width="10">
             <Grid Name="contentGrid">
                 <Grid.Resources>
                     <ResourceDictionary>

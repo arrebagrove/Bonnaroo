@@ -28,7 +28,7 @@ namespace Bonnaroo
     public sealed partial class Lineup : Page
     {
         public ObservableCollection<HTMLData> HTMLStrings = new ObservableCollection<HTMLData>();
-        public ObservableCollection<lineupArtists> artists = new ObservableCollection<lineupArtists>();
+        public ObservableCollection<lineupArt> artists = new ObservableCollection<lineupArt>();
         public Library library;
         public Lineup()
         {
@@ -37,30 +37,67 @@ namespace Bonnaroo
             library = new Library();
            
         }
-        private void updateCollection(string html)
+        private async void updateCollection(string html, bool fromFreshDownloadFlag)
         {
             string htmllink = html;
-            while (html.IndexOf("class=\"band \" id=") != -1)
+            //Debug.WriteLine(htmllink);
+            Debug.WriteLine("in UpdateCollection");
+            artists.Clear();
+            RootObjectArtist rartist = new RootObjectArtist();
+            rartist.art = new List<lineupArt>();
+            bool artistsFileExists = await library.checkIfFileExists("artistsFile");
+            if (fromFreshDownloadFlag == true || artistsFileExists == false)
             {
-                int indexlink = htmllink.IndexOf("<a href=\"lineup.bonnaroo.com/band\"");
-                int indexlink1 = htmllink.IndexOf("\"");
-                string sublink = htmllink.Substring(indexlink + 1, indexlink1 - indexlink - 1);
-                int index = html.IndexOf("class=\"band \" id=");
-                string sub = html.Substring(index);
-                index = sub.IndexOf(">");
-                int index1 = sub.IndexOf("<");
-                string sub1 = sub.Substring(index + 1, index1 - index - 1);
-                if (sub1.Contains("&amp;"))
+                while (html.IndexOf("class=\"band \" id=") != -1)
                 {
-                    sub1 = sub1.Substring(0, sub1.IndexOf("&amp;") - 1) + " & " + sub1.Substring(sub1.IndexOf("&amp;") + 1 + 4);
+                    //Debug.WriteLine("In While loop");
+                    htmllink = html;
+                    int indexlink = htmllink.IndexOf("class=\"band \" id");
+                    string subtemp = htmllink.Substring(indexlink);
+                    indexlink = subtemp.IndexOf("href=\"");
+                    string sublink = subtemp.Substring(indexlink + 38);
+                    sublink = sublink.Substring(0, sublink.IndexOf("\""));
+
+                    int index = html.IndexOf("class=\"band \" id=");
+                    string sub = html.Substring(index);
+                    index = sub.IndexOf(">");
+                    int index1 = sub.IndexOf("<");
+                    string sub1 = sub.Substring(index + 1, index1 - index - 1);
+                    if (sub1.Contains("&amp;"))
+                    {
+                        sub1 = sub1.Substring(0, sub1.IndexOf("&amp;") - 1) + " & " + sub1.Substring(sub1.IndexOf("&amp;") + 1 + 4);
+                    }
+                    html = sub.Substring(index1);
+                    Debug.WriteLine(sub1);
+                    lineupArt lart = new lineupArt();
+                    lart.name = sub1;
+                    lart.link = "http://lineup.bonnaroo.com/band/" + sublink;
+                    lart.sublink = sublink;
+                    if (await library.checkIfFileExists(sublink + "profilepic"))
+                    {
+                        lart.artistPhotoPath = "ms-appdata:///local/" + sublink + "profilepic";
+                    }
+                    else
+                    {
+                        lart.artistPhotoPath = "/assets/member_photo.jpg";
+                    }
+                    artists.Add(lart);
+                    rartist.art.Add(lart);
                 }
-                html = sub.Substring(index1);
-                Debug.WriteLine(sub1);
-                lineupArtists lart = new lineupArtists();
-                lart.name = sub1;
-                lart.link = "http://lineup.bonnaroo.com/band/" + sublink;
-                lart.sublink = sublink;
-                artists.Add(lart);
+                string res = lineupArtists.artistDataSerializer(rartist);
+                Debug.WriteLine(res);
+                await library.writeFile("artistsFile", res);
+            }
+            else          // if the artistsFile exists and we don't need to fo a fresh refresh, read from the file, deserialize and add to the observable collection
+            {
+                Debug.WriteLine("in else on lineup page");
+                string res = await library.readFile("artistsFile");
+                rartist = lineupArtists.artistDataDeserializer(res);
+                var rartinfo = rartist.art;
+                foreach (var rart in rartinfo)
+                {
+                    artists.Add(rart);
+                }
             }
         }
         protected override async void OnNavigatedTo(NavigationEventArgs e)
@@ -69,19 +106,22 @@ namespace Bonnaroo
             string html = null;
             if(await library.checkIfFileExists("lineupLandingPage"))
             {
-                html = await library.readFile("lineupLandingPage");
-                string htmllink = html;
-                HTMLStrings.Add(new HTMLData(html));
-                HtmlSource.Source = HTMLStrings;
-                Debug.WriteLine("Lineup webpage already exists. Reading and displaying html");
-                updateCollection(html);
+                Debug.WriteLine("Lineup landing page file does exist");
                 myWebView.Visibility = Visibility.Collapsed;
+                html = await library.readFile("lineupLandingPage");
+                //string htmllink = html;
+                //HTMLStrings.Add(new HTMLData(html));
+                //HtmlSource.Source = HTMLStrings;
+                //Debug.WriteLine("Lineup webpage already exists. Reading and displaying html");
+                updateCollection(html, false);
+                //myWebView.Visibility = Visibility.Collapsed;
                 
             }
             else
             {
-                Debug.WriteLine("File doesn't exist");
-                myWebView.Navigate(new Uri("http://lineup.bonnaroo.com/?sort=alpha"));
+                Debug.WriteLine("File doesn't exist : lineuplandingpage");
+                myWebView.Visibility = Visibility.Visible;
+                myWebView.Navigate(new Uri("http://lineup.bonnaroo.com/"));
             }
         }
         private void Home_Click(object sender, RoutedEventArgs e)
@@ -148,30 +188,44 @@ namespace Bonnaroo
             public string HTML { get; set; }
         }
 
-        private async void refreshButton_Click(object sender, RoutedEventArgs e)
+        private void refreshButton_Click(object sender, RoutedEventArgs e)
         {
+            Debug.WriteLine("Refresh button in lineup.xaml.cs clicked");
+            myWebView.Visibility = Visibility.Visible;
             myWebView.Navigate(new Uri("http://lineup.bonnaroo.com/"));
-            string pagecontent = await myWebView.InvokeScriptAsync("eval", new string[] { "document.documentElement.innerHTML;" });
-            await library.writeFile("lineupLandingPage", pagecontent);
-            updateCollection(pagecontent);
+            //string pagecontent = await myWebView.InvokeScriptAsync("eval", new string[] { "document.documentElement.innerHTML;" });
+            //myWebView.Visibility = Visibility.Collapsed;
+            //await library.writeFile("lineupLandingPage", pagecontent);
+            //updateCollection(pagecontent, true);
         }
 
         private async void myWebView_NavigationCompleted(WebView sender, WebViewNavigationCompletedEventArgs args)
         {
-           
-                Debug.WriteLine("In navigation completed");
+            try
+            {
+                myWebView.Visibility = Visibility.Visible;
+                Debug.WriteLine("In Lineup.xaml.cs webview navigation completed");
                 string pagecontent = await myWebView.InvokeScriptAsync("eval", new string[] { "document.documentElement.innerHTML;" });
                 //Debug.WriteLine(pagecontent);
                 await library.writeFile("lineupLandingPage", pagecontent);
                 Debug.WriteLine("In lineup navigation completed : Writing html to file.");
+                myWebView.Visibility = Visibility.Collapsed;
+                
+                updateCollection(pagecontent, true);
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine(ex);
+            }
             
         }
 
         private void myListView_ItemClick(object sender, ItemClickEventArgs e)
         {
-            lineupArtists art = (lineupArtists)e.ClickedItem;
+            myWebView.Visibility = Visibility.Collapsed;
+            lineupArt art = (lineupArt)e.ClickedItem;
             Frame rootFrame = Window.Current.Content as Frame;
-
+            rootFrame.Navigate(typeof(ArtistPage), art);
         }
     }
 }

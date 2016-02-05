@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Runtime.InteropServices.WindowsRuntime;
@@ -91,6 +92,7 @@ namespace Bonnaroo
 
         private void App_BackRequested(object sender, BackRequestedEventArgs e)
         {
+            Debug.WriteLine("App Back Requested");
             Frame rootFrame = Window.Current.Content as Frame;
             if (rootFrame == null)
                 return;

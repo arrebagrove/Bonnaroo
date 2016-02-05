@@ -4,9 +4,12 @@ using System.Diagnostics;
 using System.IO;
 using System.Linq;
 using System.Net;
+using System.Net.Http;
 using System.Text;
 using System.Threading.Tasks;
 using Windows.Storage;
+using Windows.Storage.Streams;
+using Windows.UI.Xaml.Media.Imaging;
 
 namespace Bonnaroo
 {
@@ -30,6 +33,51 @@ namespace Bonnaroo
             }
             return true;
         }
+
+        public async Task<bool> downloadImage(string url, string filename)
+        {
+            Uri uri = new Uri(url);
+            //string fname = member_id + ".png";
+            var bitmapImage = new BitmapImage();
+            var httpClient = new HttpClient();
+            var httpResponse = await httpClient.GetAsync(uri);
+            byte[] b = await httpResponse.Content.ReadAsByteArrayAsync();
+            try
+            {
+                // create a new in memory stream and datawriter
+                using (var stream = new InMemoryRandomAccessStream())
+                {
+                    using (DataWriter dw = new DataWriter(stream))
+                    {
+                        // write the raw bytes and store
+                        dw.WriteBytes(b);
+                        await dw.StoreAsync();
+
+                        // set the image source
+                        stream.Seek(0);
+                        bitmapImage.SetSource(stream);
+
+                        var storageFile = await ApplicationData.Current.LocalFolder.CreateFileAsync(
+                            filename,
+                            CreationCollisionOption.OpenIfExists);
+
+                        using (var storageStream = await storageFile.OpenAsync(FileAccessMode.ReadWrite))
+                        {
+                            await RandomAccessStream.CopyAndCloseAsync(stream.GetInputStreamAt(0), storageStream.GetOutputStreamAt(0));
+                        }
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                Debug.WriteLine("Exception in downloading image : " + ex);
+                return false;
+            }
+
+            return true;
+        }
+
+
         public async Task<string> makeWebRequest(string uri)
         {
             WebRequest request = WebRequest.Create(uri);
